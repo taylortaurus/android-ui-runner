@@ -1,0 +1,13 @@
+2020-01-14 17:04:05,501 - CPH1803 - INFO - udid: 4c90983c-2c:5d:34:eb:6c:43-CPH1803
+2020-01-14 17:04:05,663 - CPH1803 - INFO - MONKEY_SHELL:CLASSPATH=/sdcard/monkey.jar:/sdcard/framework.jar exec app_process /system/bin tv.panda.test.monkey.Monkey --output-directory /sdcard/MonkeyLog -p com.nemo.starhalo --running-minutes 1 --uiautomatordfs --act-whitelist-file /sdcard/awl.strings --throttle 200  -v -v  >/sdcard/monkeyout.txt 2>/sdcard/monkeyerr.txt & --output-directory /sdcard/MonkeyLog
+2020-01-14 17:04:05,663 - CPH1803 - INFO - Clearing monkey env
+2020-01-14 17:04:06,138 - CPH1803 - INFO - Clear monkey env success
+2020-01-14 17:04:06,279 - CPH1803 - INFO - push jar file--->monkey.jar framework.jar
+2020-01-14 17:04:06,290 - CPH1803 - INFO - push white_list file---> awl.strings 
+2020-01-14 17:04:06,298 - CPH1803 - INFO - push actions file---> max.xpath.actions 
+2020-01-14 17:04:06,299 - CPH1803 - INFO - setting AdbIME as default
+2020-01-14 17:04:17,707 - CPH1803 - INFO - install adbkeyboard and set as default
+2020-01-14 17:04:17,717 - CPH1803 - INFO - push string file---> max.strings 
+2020-01-14 17:04:17,718 - CPH1803 - INFO - starting run monkey
+2020-01-14 17:04:17,719 - CPH1803 - INFO - It will be take about 1 minutes,please be patient ...........................
+2020-01-14 17:05:49,773 - CPH1803 - INFO - Maxim monkey run end>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
