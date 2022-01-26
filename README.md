@@ -1,4 +1,5 @@
-### 框架介绍
+### Android-UI-Runner
+
 ```
 基于Uiautomator2+Python-Unittest的UI自动化测试框架
 https://github.com/openatx/uiautomator2
@@ -22,7 +23,9 @@ python-uiautomator2主要分为两个部分，python客户端，移动设备
 3、移动设备通过WIFI或USB接收到PC上发来的HTTP请求，执行制定的操作
 
 ```
-
+<a  target="_blank">
+<img src="https://cdn.nlark.com/yuque/0/2022/png/153412/1643183387082-0b352e36-56ba-4971-8e5d-228bd555885d.png?x-oss-process=image%2Fresize%2Cw_1500%2Climit_0">
+</a>
 ### 环境要求
 ```
 1.安装uiautomator2: pip3 install -U uiautomator2
@@ -38,7 +41,7 @@ python3 -m weditor
 ```
 
 ### Unittest断言
-```
+```py
 self.assertEqual(value1, value2, failedinfo) # 断言value1 == value2
 
 self.assertNotEqual(value1, value2, failedinfo) # 断言value1 != value2
@@ -76,7 +79,7 @@ pip3 install -r requirements.txt
 ```
 **run_cases .py** 
 
-```
+```py
 1.打包完成后，将apk、mapping等信息传给ui自动化的服务
 2.下载apk和mapping文件到对应的目录
 ​3.根据mapping文件解析拿到混淆后的ResourceId
@@ -118,7 +121,7 @@ if __name__ == '__main__':
 ```
 
 **Driver.py** 
-```
+```py
 1.首先根据config.ini中`method`的值来判断从atx-serve获取online的设备 还是从config.ini中的ip来获取在线的设备
 2.在获取到设备之后，根据设备生产data.json测试数据
 ​3.并行多设备执行测试
@@ -164,7 +167,7 @@ if __name__ == '__main__':
 
 
 #### Monkey执行
-```
+```py
 进入Monkey目录，执行：python3 monkey_run.py 包名 执行时间（分钟） 点击延迟时间（毫秒）
 例子：python3 monkey_run.py com.nemo.starhalo 10 200
 报告在MaxiReport_History目录
@@ -182,7 +185,7 @@ oom-traces.log：内存溢出日志（发生了内存溢出才有）
 
 
 **应用操作**
-```
+```py
 d.app_install('http://some-domain.com/some.apk') #引号内为下载apk地址
 
 d.app_start('com.ruguoapp.jike') #引号内为包名称
@@ -202,14 +205,14 @@ sess.close() # 停止网易云音乐
 
 **跳过弹窗，禁止弹窗**
 
-```
+```py
 d.disable_popups（）#自动跳过弹出窗口 
 
 d.disable_popups（false）#禁用自动跳过弹出窗
 ```
 
 **检测应用崩溃**
-```
+```py
 # App正在运行时
 sess(text="Music").click() # 操作是正常的
 
@@ -217,7 +220,7 @@ sess(text="Music").click() # 操作是正常的
 sess(text="Music").click() # 引发会话中断错误SessionBrokenError
 ```
 **获取应用信息**
-```
+```py
 d.app_info("com.examples.demo")
 # 会输出
 #{
@@ -233,7 +236,7 @@ img = d.app_icon("com.examples.demo")
 img.save("icon.png")
 ```
 **推拉文件**
-```
+```py
 d.push("foo.txt", "/sdcard/") # push文件夹
 
 d.push("foo.txt", "/sdcard/bar.txt") # push和重命名
@@ -249,7 +252,7 @@ d.pull("/sdcard/tmp.txt", "tmp.txt") # 如果在设备上找不到文件，FileN
 d.pull("/sdcard/some-file-not-exists.txt", "tmp.txt")
 ```
 **操作屏幕**
-```
+```py
 d.info.get（' screenOn '）#需要 Android> = 4.4
 
 d.screen_on（）＃打开屏幕 
@@ -285,14 +288,14 @@ imagebin = d.screenshot(format='raw')
 open("some.jpg", "wb").write(imagebin)
 ```
 **操作通知栏**
-```
+```py
 d.open_notification（）#下拉打开通知栏
 
 d.open_quick_settings（）#下拉打开快速设置栏
 ```
 
 **硬键盘和软键盘操作**
-```
+```py
 d.press("home") # 点击home键
 
 d.press("back") # 点击back键
@@ -328,7 +331,7 @@ d.press("camera") # 相机
 d.press("power") #电源键
 ```
 **UI对象定位方式**
-```
+```py
 text、resourceId、description、className、xpath、坐标
 
 d(text="Settings").click()  #text定位单击
@@ -364,19 +367,19 @@ d(text="Settings").wait(timeout=3.0) ## 等待ui对象出现，返回布尔值
 d(text="Settings").wait_gone(timeout=1.0)  # 等待ui对象的消失
 ```
 **执行双击UI对象**
-```
+```py
 d(text="设置").double_click() #双击特定ui对象的中心
 
 d.double_click(x, y, 0.1)#两次单击之间的默认持续时间为0.1秒
 ```
 **执行长按UI对象**
-```
+```py
 d(text="Settings").long_click() # 长按特定UI对象的中心
 
 d.long_click(x, y, 0.5) # 长按坐标位置0.5s默认
 ```
 **将UI对象拖向另一个点或另一个UI对象**
-```
+```py
 # Android<4.3不能使用drag.
 
 d(text="Settings").drag_to(x, y, duration=0.5)  # 在0.5秒内将UI对象拖到屏幕点(x, y)
@@ -384,7 +387,7 @@ d(text="Settings").drag_to(x, y, duration=0.5)  # 在0.5秒内将UI对象拖到�
 d(text="Settings").drag_to(text="Clock", duration=0.25) # 将UI对象拖到另一个UI对象的中心位置，时间为0.25秒
 ```
 **左右操作**
-```
+```py
 d(text="Settings").swipe("right")
 
 d(text="Settings").swipe("left", steps=10)
@@ -411,7 +414,7 @@ d.swipe_ext(Direction.HORIZ_FORWARD) # 页面水平右翻
 d.swipe_ext(Direction.HORIZ_BACKWARD) # 页面水平左翻
 ```
 **滚动操作**
-```
+```py
 d(scrollable=True).fling() #向前投掷(默认)垂直(默认)
 
 d(scrollable=True).fling.vert.forward()  #垂直向后滚动
@@ -435,13 +438,13 @@ d(scrollable=True).scroll.toEnd() # 滚动到垂直结束
 d(scrollable=True).scroll.to(text="Security") #垂直向前滚动，直到出现特定的ui对象
 ```
 **拖动操作**
-```
+```py
 d(text="设置").drag_to(500, 500, duration=0.1)  #在0.1秒内拖动到坐标（x,y）
 
 d(text="设置").drag_to(text="安全中心", duration=0.2)
 ```
 **获取/设置/清空编辑框内容**
-```
+```py
 d(description="请输入QQ号码或手机或邮箱").get_text()
 
 d(description="请输入QQ号码或手机或邮箱").set_text("1234")
@@ -450,7 +453,7 @@ d(description="请输入QQ号码或手机或邮箱").clear_text()
 ```
 
 **打开链接**
-```
+```py
 d.open_url("https://www.baidu.com")
 
 d.open_url("taobao://taobao.com")    # open Taobao app
