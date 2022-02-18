@@ -12,7 +12,7 @@ flag = 'IMAGE:'
 log = Log()
 
 
-def exception_decoration(func,pkg_name='com.app.videoplayer'):
+def exception_decoration(func,pkg_name='com.app.xxxxxx'):
     """异常处理,重新启动app"""
     @wraps(func)
     def wrapper(*args, **kwargs):

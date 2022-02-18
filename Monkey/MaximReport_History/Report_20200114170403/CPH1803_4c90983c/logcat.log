@@ -420,7 +420,7 @@
 01-14 17:02:20.989 21104 21104 I AndroidRuntime: VM exiting with result code 0.
 01-14 17:02:21.025  1627  2335 I InputReader: Reconfiguring input devices.  changes=0x00000010
 01-14 17:02:21.034  1627  1627 I ActivityManager: Start proc 21131:com.android.keychain/1000 for service com.android.keychain/.KeyChainService
-01-14 17:02:21.040  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.nemo.vidmate/.receiver.PackageChangeReceiver
+01-14 17:02:21.040  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.nemo.xxx/.receiver.PackageChangeReceiver
 01-14 17:02:21.040  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemanager.impl.PackageMonitorReceiverImpl$RegisteredReceiver
 01-14 17:02:21.041  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.instantapps.appmanagement.InstantAppRemoveMonitor
 01-14 17:02:21.041  1627  1752 D PackageManager: remove appIconsCache:com.android.adbkeyboard
@@ -482,10 +482,10 @@
 01-14 17:02:21.372  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.estrongs.android.pop/com.duapps.ad.stats.CallbackReceiver
 01-14 17:02:21.373  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.facebook.katana/com.facebook.feed.platformads.AppInstallReceiver
 01-14 17:02:21.373  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.facebook.katana/com.facebook.games.packagecontroller.PackageChangeReceiver
-01-14 17:02:21.373  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.nemo.vidmate/.receiver.NotificationReceiver
+01-14 17:02:21.373  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.nemo.xxx/.receiver.NotificationReceiver
 01-14 17:02:21.396  4546 21161 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
 01-14 17:02:21.398  4546 21161 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.android.adbkeyboard flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
-01-14 17:02:21.466  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.nemo.vidmate/.receiver.PackageChangeReceiver
+01-14 17:02:21.466  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.nemo.xxx/.receiver.PackageChangeReceiver
 01-14 17:02:21.474  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemanager.impl.PackageMonitorReceiverImpl$RegisteredReceiver
 01-14 17:02:21.481  1627  1665 W SearchableInfo: Invalid searchable metadata for com.google.android.gms/.nearby.sharing.ContactSelectActivity: Search label must be a resource reference.
 01-14 17:02:21.481 14977 21168 I PhoneManager.ScannerImpl: [Mode] filterScanTask(): mLastMode - SCAN_PACKAGE, now mode - SCAN_PACKAGE, where - 3, state - 3
@@ -528,7 +528,7 @@
 01-14 17:02:21.674  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.facebook.katana/com.facebook.feed.platformads.AppInstallReceiver
 01-14 17:02:21.674  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.facebook.katana/com.facebook.games.packagecontroller.PackageChangeReceiver
 01-14 17:02:21.675  4546 21158 I FontsPackageChangeOp: Package com.android.adbkeyboard has no metadata
-01-14 17:02:21.684  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.nemo.vidmate/.receiver.PackageChangeReceiver
+01-14 17:02:21.684  1627  1668 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:com.android.adbkeyboard flg=0x4000010 (has extras) } to com.nemo.xxx/.receiver.PackageChangeReceiver
 01-14 17:02:21.735 15150 21184 W cdo_md5 : refreshAllAppMd5: start
 01-14 17:02:21.732 14450 21183 W cdo_md5 : refreshAllAppMd5: start
 01-14 17:02:21.742  1627  1700 E OppoPackageManager: parserFilterAppList() xml empty, return.
@@ -1401,7 +1401,7 @@
 01-14 17:02:50.996 15347 20882 I chatty  : uid=10541(com.nemo.starhalo) expire 1 line
 01-14 17:02:51.001  1162 10103 I OMX-VDEC-1080P: omx_vdec::component_deinit() complete
 01-14 17:02:51.005  1162 10103 I OMX-VDEC-1080P: Exit OMX vdec Destructor: fd=7
-01-14 17:02:51.006  1162 10103 I OMX-VDEC-1080P: Video slvp perflock released
+01-14 17:02:51.006  1162 10103 I OMX-VDEC-1080P: xxx slvp perflock released
 01-14 17:02:51.024  9081  9081 I Choreographer: Skipped 1 frames!  The application may be doing too much work on its main thread.
 01-14 17:02:51.041 15347 21382 I chatty  : uid=10541(com.nemo.starhalo) expire 4 lines
 01-14 17:02:51.210 15347 15347 D ViewRootImpl: swipeFromBottom mIgnoring === false downY 179 mStatusBarHeight 54
@@ -1518,11 +1518,11 @@
 01-14 17:03:00.502  1627  3880 D NetworkPolicy: uid 10541 is allowed on unmetered network
 01-14 17:03:00.538 15347 21406 I chatty  : uid=10541(com.nemo.starhalo) expire 39 lines
 01-14 17:03:00.543 15347 21411 I chatty  : uid=10541(com.nemo.starhalo) expire 18 lines
-01-14 17:03:00.548  1162 10103 I OMXMaster: makeComponentInstance(OMX.qcom.video.decoder.avc) in omx@1.0-service process
+01-14 17:03:00.548  1162 10103 I OMXMaster: makeComponentInstance(OMX.qcom.xxx.decoder.avc) in omx@1.0-service process
 01-14 17:03:00.554  1162 10103 E         : Service not available yet
-01-14 17:03:00.561  1162 10103 I OMX-VDEC-1080P: Video slvp perflock acquired
+01-14 17:03:00.561  1162 10103 I OMX-VDEC-1080P: xxx slvp perflock acquired
 01-14 17:03:00.562   683   771 E ANDR-PERF-MPCTL: Invalid profile no. 0, total profiles 0 only
-01-14 17:03:00.562  1162 10103 I OMX-VDEC-1080P: component_init: OMX.qcom.video.decoder.avc : fd=7
+01-14 17:03:00.562  1162 10103 I OMX-VDEC-1080P: component_init: OMX.qcom.xxx.decoder.avc : fd=7
 01-14 17:03:00.576  1162 10103 I OMX-VDEC-1080P: omx_vdec::component_init() success : fd=7
 01-14 17:03:00.579 15347 21410 I chatty  : uid=10541(com.nemo.starhalo) expire 5 lines
 01-14 17:03:00.582  1162 10001 E OMX-VDEC-1080P: Enable/Disable allocate-native-handle allowed only on input port!
@@ -1657,7 +1657,7 @@
 01-14 17:03:00.774  1627  3642 D NetworkPolicy: uid 10541 is allowed on unmetered network
 01-14 17:03:00.785  1162  9880 I OMX-VDEC-1080P: omx_vdec::component_deinit() complete
 01-14 17:03:00.787  1162  9880 I OMX-VDEC-1080P: Exit OMX vdec Destructor: fd=7
-01-14 17:03:00.788  1162  9880 I OMX-VDEC-1080P: Video slvp perflock released
+01-14 17:03:00.788  1162  9880 I OMX-VDEC-1080P: xxx slvp perflock released
 01-14 17:03:00.794  1627  2411 V NetworkPolicy: setMeteredNetworkWhitelist 10144: true
 01-14 17:03:00.794  1627  3642 V MediaRouterService: restoreBluetoothA2dp(false)
 01-14 17:03:00.794 15347 21424 I chatty  : uid=10541(com.nemo.starhalo) expire 4 lines
@@ -1816,11 +1816,11 @@
 01-14 17:03:08.227 15347 15347 D ViewRootImpl: swipeFromBottom mIgnoring === false downY 635 mStatusBarHeight 54
 01-14 17:03:08.231  1627  2886 I ActivityManager: START u0 {cmp=com.nemo.starhalo/.ui.base.FragmentContainerActivity (has extras)} from uid 10541 and from pid 15347
 01-14 17:03:08.415 15347 21440 I chatty  : uid=10541(com.nemo.starhalo) expire 12 lines
-01-14 17:03:08.420  1162 10001 I OMXMaster: makeComponentInstance(OMX.qcom.video.decoder.avc) in omx@1.0-service process
+01-14 17:03:08.420  1162 10001 I OMXMaster: makeComponentInstance(OMX.qcom.xxx.decoder.avc) in omx@1.0-service process
 01-14 17:03:08.424  1162 10001 E         : Service not available yet
 01-14 17:03:08.430   683   771 E ANDR-PERF-MPCTL: Invalid profile no. 0, total profiles 0 only
-01-14 17:03:08.430  1162 10001 I OMX-VDEC-1080P: Video slvp perflock acquired
-01-14 17:03:08.430  1162 10001 I OMX-VDEC-1080P: component_init: OMX.qcom.video.decoder.avc : fd=7
+01-14 17:03:08.430  1162 10001 I OMX-VDEC-1080P: xxx slvp perflock acquired
+01-14 17:03:08.430  1162 10001 I OMX-VDEC-1080P: component_init: OMX.qcom.xxx.decoder.avc : fd=7
 01-14 17:03:08.441  1162 10001 I OMX-VDEC-1080P: omx_vdec::component_init() success : fd=7
 01-14 17:03:08.444 15347 21439 I chatty  : uid=10541(com.nemo.starhalo) expire 4 lines
 01-14 17:03:08.445  1162 10001 E OMX-VDEC-1080P: Enable/Disable allocate-native-handle allowed only on input port!
@@ -1903,48 +1903,48 @@
 01-14 17:03:08.649  1152  9975 I FFmpegExtractor: SniffFFMPEG (initial confidence: 0.800000, mime: )
 01-14 17:03:08.653  1152  9975 D FFmpegExtractor: suppoted codec(h264) by official Stagefright
 01-14 17:03:08.653  1152  9975 D FFmpegExtractor: suppoted codec(aac) by official Stagefright
-01-14 17:03:08.653  1152  9975 D FFmpegExtractor: ffmpeg detected media content as 'video/mp4' with confidence 0.08
-01-14 17:03:08.653  1152  9975 I MediaExtractor: Autodetected media content as 'video/mp4' with confidence 0.80
+01-14 17:03:08.653  1152  9975 D FFmpegExtractor: ffmpeg detected media content as 'xxx/mp4' with confidence 0.08
+01-14 17:03:08.653  1152  9975 I MediaExtractor: Autodetected media content as 'xxx/mp4' with confidence 0.80
 01-14 17:03:08.654  1152  9975 I SampleTable: There are reordered frames present.
 01-14 17:03:08.655  1152  9975 D MPEG4Extractor: Mpeg4 audio channel = 2 ,sample rate = 44100
 01-14 17:03:08.656  1154  6049 E MediaExtractor: Trace connect 0xe4d17ca0 0xe4d12040
-01-14 17:03:08.657  1154  6049 I MediaExtractor: found video mime = video/avc
+01-14 17:03:08.657  1154  6049 I MediaExtractor: found xxx mime = xxx/avc
 01-14 17:03:08.658  1154  6049 I MediaExtractor: found audio mime = audio/mp4a-latm
-01-14 17:03:08.662  1154  6049 I MediaCodec: CreateByComponentName(), name = OMX.qcom.video.decoder.avc
+01-14 17:03:08.662  1154  6049 I MediaCodec: CreateByComponentName(), name = OMX.qcom.xxx.decoder.avc
 01-14 17:03:08.663  1154  6049 I MediaCodec: new MediaCodec()
 01-14 17:03:08.663  1154  6049 I ACodec  : new ACodec()
 01-14 17:03:08.664  1154 21468 I ACodec  : onAllocateComponent()
 01-14 17:03:08.664  1154 21468 I ACodec  : ----------------------------------------
-01-14 17:03:08.664  1154 21468 I ACodec  : matched component [OMX.qcom.video.decoder.avc]
+01-14 17:03:08.664  1154 21468 I ACodec  : matched component [OMX.qcom.xxx.decoder.avc]
 01-14 17:03:08.664  1154 21468 I ACodec  : ----------------------------------------
 01-14 17:03:08.665  1154 21468 I OMXClient: Treble IOmx obtained
-01-14 17:03:08.666  1162 11006 I OMXMaster: makeComponentInstance(OMX.qcom.video.decoder.avc) in omx@1.0-service process
+01-14 17:03:08.666  1162 11006 I OMXMaster: makeComponentInstance(OMX.qcom.xxx.decoder.avc) in omx@1.0-service process
 01-14 17:03:08.670  1162 11006 E         : Service not available yet
-01-14 17:03:08.672  1162 11006 I OMX-VDEC-1080P: Video slvp perflock released
-01-14 17:03:08.673  1162 11006 I OMX-VDEC-1080P: component_init: OMX.qcom.video.decoder.avc : fd=28
+01-14 17:03:08.672  1162 11006 I OMX-VDEC-1080P: xxx slvp perflock released
+01-14 17:03:08.673  1162 11006 I OMX-VDEC-1080P: component_init: OMX.qcom.xxx.decoder.avc : fd=28
 01-14 17:03:08.674 20992 20992 I UIAService: On StartCommand
 01-14 17:03:08.677  1162 11006 I OMX-VDEC-1080P: omx_vdec::component_init() success : fd=28
-01-14 17:03:08.678  1154 21468 I ACodec  : Successfully allocate component [OMX.qcom.video.decoder.avc]
+01-14 17:03:08.678  1154 21468 I ACodec  : Successfully allocate component [OMX.qcom.xxx.decoder.avc]
 01-14 17:03:08.679  1154  6049 I MediaCodec: configure()
-01-14 17:03:08.679  1154 21468 I ACodec  : configureCodec() mime = video/avc
-01-14 17:03:08.680  1154 21468 I ExtendedACodec: setupVideoDecoder()
+01-14 17:03:08.679  1154 21468 I ACodec  : configureCodec() mime = xxx/avc
+01-14 17:03:08.680  1154 21468 I ExtendedACodec: setupxxxDecoder()
 01-14 17:03:08.681  1162 30936 E OMXNodeInstance: getParameter(0xf13195c4:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
 01-14 17:03:08.681  1162 10103 E OMXNodeInstance: getParameter(0xf13195c4:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
-01-14 17:03:08.686  1154 21468 D ACodec  : Setting [OMX.qcom.video.decoder.avc] input port buffer number: 1
+01-14 17:03:08.686  1154 21468 D ACodec  : Setting [OMX.qcom.xxx.decoder.avc] input port buffer number: 1
 01-14 17:03:08.686  1162 11006 E OMX-VDEC-1080P: ERROR: IP Requirements(#4: 6078464) Requested(#1: 6078464)
 01-14 17:03:08.686  1162 11006 E OMX-VDEC-1080P: set_parameter: Error: 0x80001005, setting param 0x2000001
 01-14 17:03:08.686  1162 11006 E OMXNodeInstance: setParameter(0xf13195c4:qcom.decoder.avc, ParamPortDefinition(0x2000001)) ERROR: BadParameter(0x80001005)
-01-14 17:03:08.686  1154 21468 W ACodec  : Fail to set [OMX.qcom.video.decoder.avc] input port buffer number: 1
-01-14 17:03:08.686  1154 21468 D ACodec  : Setting [OMX.qcom.video.decoder.avc] output port buffer number: 1
+01-14 17:03:08.686  1154 21468 W ACodec  : Fail to set [OMX.qcom.xxx.decoder.avc] input port buffer number: 1
+01-14 17:03:08.686  1154 21468 D ACodec  : Setting [OMX.qcom.xxx.decoder.avc] output port buffer number: 1
 01-14 17:03:08.694  1162 10103 E OMX-VDEC-1080P: OP Requirements: Client count(1) insufficient v/s requested(18)
 01-14 17:03:08.694  1162 10103 E OMX-VDEC-1080P: ERROR: OP Requirements(#18: 118784) Requested(#1: 118784)
 01-14 17:03:08.694  1162 10103 E OMX-VDEC-1080P: set_parameter: Error: 0x80001005, setting param 0x2000001
 01-14 17:03:08.694  1162 10103 E OMXNodeInstance: setParameter(0xf13195c4:qcom.decoder.avc, ParamPortDefinition(0x2000001)) ERROR: BadParameter(0x80001005)
-01-14 17:03:08.694  1154 21468 W ACodec  : Fail to set [OMX.qcom.video.decoder.avc] output port buffer number: 1
+01-14 17:03:08.694  1154 21468 W ACodec  : Fail to set [OMX.qcom.xxx.decoder.avc] output port buffer number: 1
 01-14 17:03:08.702  1154 21468 I ExtendedACodec: Decoder will be in frame by frame mode
 01-14 17:03:08.704  1154 21468 I ExtendedACodec: Thumbnail mode enabled.
 01-14 17:03:08.706  1162  9880 E OMXNodeInstance: getParameter(0xf13195c4:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
-01-14 17:03:08.708  1154  6049 I MediaCodec: Video start()
+01-14 17:03:08.708  1154  6049 I MediaCodec: xxx start()
 01-14 17:03:08.724   658   658 W /system/bin/hw/android.hidl.allocator@1.0-service: ashmem_create_region(6078464) returning hidl_memory(0x734382c520, 6078464)
 01-14 17:03:08.730   658   658 I chatty  : uid=1000(system) allocator@1.0-s identical 2 lines
 01-14 17:03:08.733   658   658 W /system/bin/hw/android.hidl.allocator@1.0-service: ashmem_create_region(6078464) returning hidl_memory(0x734382c520, 6078464)
@@ -1954,18 +1954,18 @@
 01-14 17:03:08.760  1162  9880 E OMXNodeInstance: getParameter(0xf13195c4:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
 01-14 17:03:08.770   658   658 W /system/bin/hw/android.hidl.allocator@1.0-service: ashmem_create_region(339968) returning hidl_memory(0x734382c520, 339968)
 01-14 17:03:08.778  1162  9880 E OMXNodeInstance: getParameter(0xf13195c4:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
-01-14 17:03:08.781  1154  6049 I MediaCodec: Video release()
+01-14 17:03:08.781  1154  6049 I MediaCodec: xxx release()
 01-14 17:03:08.790 15347 15347 I Choreographer: Skipped 1 frames!  The application may be doing too much work on its main thread.
 01-14 17:03:08.792  1162 11006 I OMX-VDEC-1080P: omx_vdec::component_deinit() complete
 01-14 17:03:08.794  1162 11006 I OMX-VDEC-1080P: Exit OMX vdec Destructor: fd=28
-01-14 17:03:08.794  1162 11006 I OMX-VDEC-1080P: Video slvp perflock acquired
+01-14 17:03:08.794  1162 11006 I OMX-VDEC-1080P: xxx slvp perflock acquired
 01-14 17:03:08.794   683   771 E ANDR-PERF-MPCTL: Invalid profile no. 0, total profiles 0 only
 01-14 17:03:08.796  1154  6049 I MediaCodec: ~MediaCodec()
-01-14 17:03:08.797  1154  6049 W MediaAnalyticsItem: Unable to record: (codec:0:-1:-11:0:10:android.media.mediacodec.codec=OMX.qcom.video.decoder.avc:android.media.mediacodec.mode=video:android.media.mediacodec.secure=0:android.media.mediacodec.profile=8:android.media.mediacodec.level=256:android.media.mediacodec.width=640:android.media.mediacodec.height=352:android.media.mediacodec.rotation-degrees=0:android.media.mediacodec.mime=video/avc:android.media.mediacodec.bytesin=33117:) [forcenew=0]
+01-14 17:03:08.797  1154  6049 W MediaAnalyticsItem: Unable to record: (codec:0:-1:-11:0:10:android.media.mediacodec.codec=OMX.qcom.xxx.decoder.avc:android.media.mediacodec.mode=xxx:android.media.mediacodec.secure=0:android.media.mediacodec.profile=8:android.media.mediacodec.level=256:android.media.mediacodec.width=640:android.media.mediacodec.height=352:android.media.mediacodec.rotation-degrees=0:android.media.mediacodec.mime=xxx/avc:android.media.mediacodec.bytesin=33117:) [forcenew=0]
 01-14 17:03:08.797  1154  6049 I ACodec  : ~ACodec()
 01-14 17:03:08.808 15347 15648 V MediaMetadataRetriever: closeFd()
 01-14 17:03:08.808 15347 15648 V MediaMetadataRetriever: mFd is valid, close it.
-01-14 17:03:08.810  1152  2777 W MediaAnalyticsItem: Unable to record: (extractor:0:-1:-11:0:3:android.media.mediaextractor.fmt=MPEG4Extractor:android.media.mediaextractor.ntrk=2:android.media.mediaextractor.mime=video/mp4:) [forcenew=0]
+01-14 17:03:08.810  1152  2777 W MediaAnalyticsItem: Unable to record: (extractor:0:-1:-11:0:3:android.media.mediaextractor.fmt=MPEG4Extractor:android.media.mediaextractor.ntrk=2:android.media.mediaextractor.mime=xxx/mp4:) [forcenew=0]
 01-14 17:03:08.836 15347 21440 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x2000
 01-14 17:03:08.838 15347 21440 W GrallocMapperPassthrough: buffer descriptor with invalid usage bits 0x2000
 01-14 17:03:08.842  1162  2801 E OMXNodeInstance: getConfig(0xec86c5c4:qcom.decoder.avc, ??(0x7f000062)) ERROR: UnsupportedSetting(0x80001019)
@@ -2032,14 +2032,14 @@
 01-14 17:03:09.453 15347 15347 D ViewRootImpl: swipeFromBottom mIgnoring === false downY 1174 mStatusBarHeight 54
 01-14 17:03:09.460 15347 21270 D skia    : --- SkAndroidCodec::NewFromStream returned null
 01-14 17:03:09.467  1627  1645 I ActivityManager: START u0 {act=android.intent.action.SEND typ=*/* flg=0x1 pkg=com.whatsapp cmp=com.whatsapp/.ContactPicker clip={*/* T:What are you waiting for? 🤷 
-01-14 17:03:09.467  1627  1645 I ActivityManager: Find awesome latest status videos to show your feelings..💞 Download Welike now! 💛
+01-14 17:03:09.467  1627  1645 I ActivityManager: Find awesome latest status xxxs to show your feelings..💞 Download Welike now! 💛
 01-14 17:03:09.467  1627  1645 I ActivityManager: http://hillo.app/download} (has extras)} from uid 10541 and from pid 15347
 01-14 17:03:09.634  1627  1645 D NetworkPolicy: uid 10541 is allowed on unmetered network
 01-14 17:03:09.639  1627  1645 I chatty  : uid=1000(system) Binder:1627_1 identical 1 line
 01-14 17:03:09.644  1627  1645 D NetworkPolicy: uid 10541 is allowed on unmetered network
 01-14 17:03:09.706 15347 15347 D ViewRootImpl: swipeFromBottom mIgnoring === false downY 1281 mStatusBarHeight 54
 01-14 17:03:09.730  1627  2886 I ActivityManager: START u0 {cmp=com.nemo.starhalo/.ui.preview.PreviewActivity (has extras)} from uid 10541 and from pid 15347
-01-14 17:03:09.907 15347 21409 W SimpleExoPlayer: Player is accessed on the wrong thread. See https://google.github.io/ExoPlayer/faqs.html#what-do-player-is-accessed-on-the-wrong-thread-warnings-mean
+01-14 17:03:09.907 15347 21409 W SimpleExoxxx: xxx is accessed on the wrong thread. See https://google.github.io/Exoxxx/faqs.html#what-do-xxx-is-accessed-on-the-wrong-thread-warnings-mean
 01-14 17:03:09.957 15347 15347 D ViewRootImpl: swipeFromBottom mIgnoring === false downY 499 mStatusBarHeight 54
 01-14 17:03:09.973  1627  2886 I ActivityManager: START u0 {cmp=com.nemo.starhalo/.ui.base.FragmentContainerActivity (has extras)} from uid 10541 and from pid 15347
 01-14 17:03:10.062  1627  2434 I MessageQueue: searched 10000messages,recent msg is { when=-1d9h45m40s913ms callback=com.android.server.wifi.OppoTcpInfoMonitor$1 target=android.os.Handler }head message is { when=-1d23h19m30s978ms callback=com.android.server.wifi.OppoTcpInfoMonitor$1 target=android.os.Handler }
@@ -2196,14 +2196,14 @@
 01-14 17:03:16.866 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/559497580_welike.mp4
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/__गीत_एवं_संगीत_-449876729_welike.jpg
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Love_whatsapp_status__welike.mp4
-01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/_GOODNIGHTSTATUS_New_Love_mashup_Dj_Remix_Whatsapp_Status_Video_Hindi_Old_Song_Remix_|_Love_Status_welike.mp4
+01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/_GOODNIGHTSTATUS_New_Love_mashup_Dj_Remix_Whatsapp_Status_xxx_Hindi_Old_Song_Remix_|_Love_Status_welike.mp4
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/New_romantic_whatsapp_status__welike.mp4
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/__गीत_एवं_संगीत__welike.jpg
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/इतनी_स्वादिष्ट_भेल_देखकर_मुँह_में_पानी_आएगा_welike.mp4
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/-1600117646_welike.mp4
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/sholey_dialog..Dharm_paaji😀😀_welike.mp4
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/269512792_welike.mp4
-01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/__रोमांचक_प्यार_💖_New_Romantic_Love_Whatsapp_Status_Video_💖_|_
+01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/__रोमांचक_प्यार_💖_New_Romantic_Love_Whatsapp_Status_xxx_💖_|_
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: 
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: _welike.mp4
 01-14 17:03:16.867 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Reshampal_yadav_welike.jpg
@@ -2248,8 +2248,8 @@
 01-14 17:03:16.873 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Screenshots/Screenshot_2019-09-26-16-20-35-92.png
 01-14 17:03:16.873 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Screenshots/Screenshot_2019-09-26-15-46-17-99.png
 01-14 17:03:16.873 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/2019-09-25-171235534.mp4
-01-14 17:03:16.873 15347 21409 D LocalImageLoader: /storage/emulated/0/VidMate/download/Joker_(2019)_Final_Trailer(480p).mp4
-01-14 17:03:16.873 15347 21409 D LocalImageLoader: /storage/emulated/0/VidMate/download/Lionel_Messi_reaction_-_The_Best_FIFA_Men's_Player_2019(480p).mp4
+01-14 17:03:16.873 15347 21409 D LocalImageLoader: /storage/emulated/0/xxx/download/Joker_(2019)_Final_Trailer(480p).mp4
+01-14 17:03:16.873 15347 21409 D LocalImageLoader: /storage/emulated/0/xxx/download/Lionel_Messi_reaction_-_The_Best_FIFA_Men's_xxx_2019(480p).mp4
 01-14 17:03:16.873 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/0e23b4c1-4885-4a67-be63-bb60555d5db4_welike.jpg
 01-14 17:03:16.873 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/2b4ac76b-b3e5-4bbb-b219-b1ce00321299_welike.jpg
 01-14 17:03:16.873 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/98aae184-ec6e-4453-b122-4bf3d702b480_welike.jpg
@@ -2288,14 +2288,14 @@
 01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/-191540043_welike.jpg
 01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/1055647562_welike.mp4
 01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/1399852160_welike.mp4
-01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/VidMate/download/Lil_Duval,_TOM._G,_KaMillion_-_City_Boy_(Official_Video)(144p).mp4
-01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/VidMate/download/Day_-_"Espaço"_Live_Performance_|_Vevo(144p).mp4
+01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/xxx/download/Lil_Duval,_TOM._G,_KaMillion_-_City_Boy_(Official_xxx)(144p).mp4
+01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/xxx/download/Day_-_"Espaço"_Live_Performance_|_Vevo(144p).mp4
 01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Screenshots/Screenshot_2019-08-29-14-00-08-35.png
-01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/VidMate/download/Golden_Retriever_Parents_Watching_Over_Their_Newborn_Puppies(144p).mp4
+01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/xxx/download/Golden_Retriever_Parents_Watching_Over_Their_Newborn_Puppies(144p).mp4
 01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/-987277084_welike.gif
 01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/IMG20190822181604.jpg
 01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/-311670838_welike.jpg
-01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Very_Sad_Heart_Touching♥️_Status_Video_welike.mp4
+01-14 17:03:16.875 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Very_Sad_Heart_Touching♥️_Status_xxx_welike.mp4
 01-14 17:03:16.876 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Ye_Kya_Hua_!!!_welike.mp4
 01-14 17:03:16.876 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/sarvan__👫👫_welike.mp4
 01-14 17:03:16.876 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/1592893500_welike.mp4
@@ -2336,7 +2336,7 @@
 01-14 17:03:16.877 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/mad_men_GIF_welike.gif
 01-14 17:03:16.877 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/_monsoon__monsoonride__taarashukla01__SwagStepChallenge__publicchallenge_@tiktok_@tiktok_india_welike.mp4
 01-14 17:03:16.877 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/1959216527_welike.mp4
-01-14 17:03:16.877 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Want more cool videos like thisClick here_VMate_welike.mp4
+01-14 17:03:16.877 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Want more cool xxxs like thisClick here_VMate_welike.mp4
 01-14 17:03:16.877 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Guru_Purnima_welike.jpg
 01-14 17:03:16.877 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/_DamaldumilDialogue__welike.mp4
 01-14 17:03:16.877 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/1386188937_welike.jpg
@@ -2434,7 +2434,7 @@
 01-14 17:03:20.012 15347 15347 D ViewRootImpl: swipeFromBottom mIgnoring === false downY 1174 mStatusBarHeight 54
 01-14 17:03:20.018 15347 21409 D skia    : --- SkAndroidCodec::NewFromStream returned null
 01-14 17:03:20.024  1627  3642 I ActivityManager: START u0 {act=android.intent.action.SEND typ=*/* flg=0x1 pkg=com.whatsapp cmp=com.whatsapp/.ContactPicker clip={*/* T:What are you waiting for? 🤷 
-01-14 17:03:20.024  1627  3642 I ActivityManager: Find awesome latest status videos to show your feelings..💞 Download Welike now! 💛
+01-14 17:03:20.024  1627  3642 I ActivityManager: Find awesome latest status xxxs to show your feelings..💞 Download Welike now! 💛
 01-14 17:03:20.024  1627  3642 I ActivityManager: http://hillo.app/download} (has extras)} from uid 10541 and from pid 15347
 01-14 17:03:20.042 16795 16795 I wpa_supplicant: TDLS: No matching entry found for Teardown 54:27:58:ff:5e:b5
 01-14 17:03:20.057 16795 16795 I chatty  : uid=1010(wifi) /vendor/bin/hw/wpa_supplicant identical 63 lines
@@ -2583,38 +2583,38 @@
 01-14 17:03:26.364 15347 15347 D ViewRootImpl: swipeFromBottom mIgnoring === false downY 712 mStatusBarHeight 54
 01-14 17:03:26.279 15347 15347 I chatty  : uid=10541(com.nemo.starhalo) identical 2 lines
 01-14 17:03:26.347 15347 15347 I Choreographer: Skipped 1 frames!  The application may be doing too much work on its main thread.
-01-14 17:03:26.381 15347 15347 I ExoPlayerImpl: Init f22ee47 [ExoPlayerLib/2.9.4] [CPH1803, CPH1803, OPPO, 27]
+01-14 17:03:26.381 15347 15347 I ExoxxxImpl: Init f22ee47 [ExoxxxLib/2.9.4] [CPH1803, CPH1803, OPPO, 27]
 01-14 17:03:26.409  1627  2886 D NetworkPolicy: uid 10541 is allowed on unmetered network
 01-14 17:03:26.412 15347 15347 I Choreographer: Skipped 1 frames!  The application may be doing too much work on its main thread.
 01-14 17:03:26.412  1627  1645 D NetworkPolicy: uid 10541 is allowed on unmetered network
-01-14 17:03:26.429 15347 21492 I MediaCodec: CreateByComponentName(), name = OMX.qcom.video.decoder.avc
+01-14 17:03:26.429 15347 21492 I MediaCodec: CreateByComponentName(), name = OMX.qcom.xxx.decoder.avc
 01-14 17:03:26.429 15347 21492 I MediaCodec: new MediaCodec()
 01-14 17:03:26.430 15347 21492 I ACodec  : new ACodec()
 01-14 17:03:26.445 15347 21496 I ACodec  : onAllocateComponent()
 01-14 17:03:26.446 15347 21496 I ACodec  : ----------------------------------------
-01-14 17:03:26.446 15347 21496 I ACodec  : matched component [OMX.qcom.video.decoder.avc]
+01-14 17:03:26.446 15347 21496 I ACodec  : matched component [OMX.qcom.xxx.decoder.avc]
 01-14 17:03:26.446 15347 21496 I ACodec  : ----------------------------------------
 01-14 17:03:26.448 15347 21493 D libc-netbsd: [getaddrinfo]:  hostname=vdc.starhalo.mobi;  servname=(null);  app_pid=15347;  app_uid=10541;  ai_flags=1024;  ai_family=0; ai_socktype=1 from prox result 0
 01-14 17:03:26.455 15347 21496 I OMXClient: Treble IOmx obtained
-01-14 17:03:26.456  1162 10001 I OMXMaster: makeComponentInstance(OMX.qcom.video.decoder.avc) in omx@1.0-service process
+01-14 17:03:26.456  1162 10001 I OMXMaster: makeComponentInstance(OMX.qcom.xxx.decoder.avc) in omx@1.0-service process
 01-14 17:03:26.461  1162 10001 E         : Service not available yet
-01-14 17:03:26.463  1162 10001 I OMX-VDEC-1080P: Video slvp perflock released
-01-14 17:03:26.463  1162 10001 I OMX-VDEC-1080P: component_init: OMX.qcom.video.decoder.avc : fd=32
+01-14 17:03:26.463  1162 10001 I OMX-VDEC-1080P: xxx slvp perflock released
+01-14 17:03:26.463  1162 10001 I OMX-VDEC-1080P: component_init: OMX.qcom.xxx.decoder.avc : fd=32
 01-14 17:03:26.479  1162 10001 I OMX-VDEC-1080P: omx_vdec::component_init() success : fd=32
-01-14 17:03:26.480 15347 21496 I ACodec  : Successfully allocate component [OMX.qcom.video.decoder.avc]
+01-14 17:03:26.480 15347 21496 I ACodec  : Successfully allocate component [OMX.qcom.xxx.decoder.avc]
 01-14 17:03:26.482 15347 21492 I MediaCodec: configure()
 01-14 17:03:26.483 15347 21494 D SurfaceUtils: connecting to surface 0x767e34a010, reason connectToSurface
-01-14 17:03:26.483 15347 21494 I MediaCodec: [OMX.qcom.video.decoder.avc] setting surface generation to 15715336
+01-14 17:03:26.483 15347 21494 I MediaCodec: [OMX.qcom.xxx.decoder.avc] setting surface generation to 15715336
 01-14 17:03:26.483 15347 21494 D SurfaceUtils: disconnecting from surface 0x767e34a010, reason connectToSurface(reconnect)
 01-14 17:03:26.483 15347 21494 D SurfaceUtils: connecting to surface 0x767e34a010, reason connectToSurface(reconnect)
-01-14 17:03:26.483 15347 21496 I ACodec  : configureCodec() mime = video/avc
+01-14 17:03:26.483 15347 21496 I ACodec  : configureCodec() mime = xxx/avc
 01-14 17:03:26.484  1162 11006 E OMX-VDEC-1080P: Enable/Disable allocate-native-handle allowed only on input port!
 01-14 17:03:26.484  1162 11006 E OMX-VDEC-1080P: set_parameter: Error: 0x80001019, setting param 0x7f00005d
 01-14 17:03:26.484  1162 11006 E OMXNodeInstance: setParameter(0xf2d83204:qcom.decoder.avc, OMX.google.android.index.allocateNativeHandle(0x7f00005d): Output:1 en=0) ERROR: UnsupportedSetting(0x80001019)
-01-14 17:03:26.484 15347 21496 I ExtendedACodec: setupVideoDecoder()
+01-14 17:03:26.484 15347 21496 I ExtendedACodec: setupxxxDecoder()
 01-14 17:03:26.495 15347 21496 I ExtendedACodec: Decoder will be in frame by frame mode
 01-14 17:03:26.499  1162  2809 E OMXNodeInstance: getConfig(0xf2d83204:qcom.decoder.avc, ??(0x7f000062)) ERROR: UnsupportedSetting(0x80001019)
-01-14 17:03:26.501 15347 21492 I MediaCodec: Video start()
+01-14 17:03:26.501 15347 21492 I MediaCodec: xxx start()
 01-14 17:03:26.506   658   658 W /system/bin/hw/android.hidl.allocator@1.0-service: ashmem_create_region(6078464) returning hidl_memory(0x734382c520, 6078464)
 01-14 17:03:26.517   658   658 I chatty  : uid=1000(system) allocator@1.0-s identical 2 lines
 01-14 17:03:26.522   658   658 W /system/bin/hw/android.hidl.allocator@1.0-service: ashmem_create_region(6078464) returning hidl_memory(0x734382c520, 6078464)
@@ -2727,14 +2727,14 @@
 01-14 17:03:27.842  1627  2410 D NetworkPolicy: uid 10144 is allowed on unmetered network
 01-14 17:03:27.898 15347 15347 D ViewRootImpl: swipeFromBottom mIgnoring === false downY 179 mStatusBarHeight 54
 01-14 17:03:27.917 15347 15347 V SensorManager: unRegisterListener by com.nemo.starhalo.f.v$a
-01-14 17:03:27.923 15347 21409 W SimpleExoPlayer: Player is accessed on the wrong thread. See https://google.github.io/ExoPlayer/faqs.html#what-do-player-is-accessed-on-the-wrong-thread-warnings-mean
-01-14 17:03:27.923 15347 21409 W SimpleExoPlayer: java.lang.IllegalStateException
-01-14 17:03:27.923 15347 21409 W SimpleExoPlayer: 	at com.google.android.exoplayer2.y.u(SourceFile:1192)
-01-14 17:03:27.923 15347 21409 W SimpleExoPlayer: 	at com.google.android.exoplayer2.y.g(SourceFile:848)
-01-14 17:03:27.923 15347 21409 W SimpleExoPlayer: 	at com.nemo.starhalo.player.a.c$b.run(SourceFile:420)
-01-14 17:03:27.923 15347 21409 W SimpleExoPlayer: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
-01-14 17:03:27.923 15347 21409 W SimpleExoPlayer: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
-01-14 17:03:27.923 15347 21409 W SimpleExoPlayer: 	at java.lang.Thread.run(Thread.java:764)
+01-14 17:03:27.923 15347 21409 W SimpleExoxxx: xxx is accessed on the wrong thread. See https://google.github.io/Exoxxx/faqs.html#what-do-xxx-is-accessed-on-the-wrong-thread-warnings-mean
+01-14 17:03:27.923 15347 21409 W SimpleExoxxx: java.lang.IllegalStateException
+01-14 17:03:27.923 15347 21409 W SimpleExoxxx: 	at com.google.android.exoxxx2.y.u(SourceFile:1192)
+01-14 17:03:27.923 15347 21409 W SimpleExoxxx: 	at com.google.android.exoxxx2.y.g(SourceFile:848)
+01-14 17:03:27.923 15347 21409 W SimpleExoxxx: 	at com.nemo.starhalo.xxx.a.c$b.run(SourceFile:420)
+01-14 17:03:27.923 15347 21409 W SimpleExoxxx: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+01-14 17:03:27.923 15347 21409 W SimpleExoxxx: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+01-14 17:03:27.923 15347 21409 W SimpleExoxxx: 	at java.lang.Thread.run(Thread.java:764)
 01-14 17:03:27.928 16795 16795 I wpa_supplicant: TDLS: No matching entry found for Teardown 54:27:58:ff:5e:b5
 01-14 17:03:27.928   683   771 E ANDR-PERF-MPCTL: Invalid profile no. 0, total profiles 0 only
 01-14 17:03:27.929 16795 16795 I wpa_supplicant: TDLS: No matching entry found for Teardown 54:27:58:ff:5e:b5
@@ -2746,26 +2746,26 @@
 01-14 17:03:28.153 15347 15347 I Choreographer: Skipped 1 frames!  The application may be doing too much work on its main thread.
 01-14 17:03:28.291 15347 15347 I Choreographer: Skipped 1 frames!  The application may be doing too much work on its main thread.
 01-14 17:03:28.299 15347 21492 I MediaCodec: stop()
-01-14 17:03:28.300 15347 15347 I ExoPlayerImpl: Release f22ee47 [ExoPlayerLib/2.9.4] [CPH1803, CPH1803, OPPO, 27] [goog.exo.core, goog.exo.okhttp]
+01-14 17:03:28.300 15347 15347 I ExoxxxImpl: Release f22ee47 [ExoxxxLib/2.9.4] [CPH1803, CPH1803, OPPO, 27] [goog.exo.core, goog.exo.okhttp]
 01-14 17:03:28.319 15347 21494 D SurfaceUtils: disconnecting from surface 0x767e34a010, reason disconnectFromSurface
-01-14 17:03:28.321 15347 21492 I MediaCodec: Video release()
+01-14 17:03:28.321 15347 21492 I MediaCodec: xxx release()
 01-14 17:03:28.322  1162  2801 I OMX-VDEC-1080P: omx_vdec::component_deinit() complete
 01-14 17:03:28.328  1162  2801 I OMX-VDEC-1080P: Exit OMX vdec Destructor: fd=32
 01-14 17:03:28.328   683   771 E ANDR-PERF-MPCTL: Invalid profile no. 0, total profiles 0 only
-01-14 17:03:28.328  1162  2801 I OMX-VDEC-1080P: Video slvp perflock acquired
+01-14 17:03:28.328  1162  2801 I OMX-VDEC-1080P: xxx slvp perflock acquired
 01-14 17:03:28.331 15347 21492 I MediaCodec: ~MediaCodec()
-01-14 17:03:28.331 15347 21492 W MediaAnalyticsItem: Unable to record: (codec:0:-1:-11:0:10:android.media.mediacodec.codec=OMX.qcom.video.decoder.avc:android.media.mediacodec.mode=video:android.media.mediacodec.secure=0:android.media.mediacodec.width=480:android.media.mediacodec.height=480:android.media.mediacodec.rotation-degrees=0:android.media.mediacodec.maxwidth=480:android.media.mediacodec.maxheight=480:android.media.mediacodec.mime=video/avc:android.media.mediacodec.bytesin=31019:) [forcenew=0]
+01-14 17:03:28.331 15347 21492 W MediaAnalyticsItem: Unable to record: (codec:0:-1:-11:0:10:android.media.mediacodec.codec=OMX.qcom.xxx.decoder.avc:android.media.mediacodec.mode=xxx:android.media.mediacodec.secure=0:android.media.mediacodec.width=480:android.media.mediacodec.height=480:android.media.mediacodec.rotation-degrees=0:android.media.mediacodec.maxwidth=480:android.media.mediacodec.maxheight=480:android.media.mediacodec.mime=xxx/avc:android.media.mediacodec.bytesin=31019:) [forcenew=0]
 01-14 17:03:28.331 15347 21492 I ACodec  : ~ACodec()
 01-14 17:03:28.337 15347 15347 V SensorManager: unRegisterListener by com.nemo.starhalo.f.v$a
 01-14 17:03:28.344 15347 21406 I MediaCodec: stop()
-01-14 17:03:28.345 15347 15347 I ExoPlayerImpl: Release b325720 [ExoPlayerLib/2.9.4] [CPH1803, CPH1803, OPPO, 27] [goog.exo.core, goog.exo.okhttp]
+01-14 17:03:28.345 15347 15347 I ExoxxxImpl: Release b325720 [ExoxxxLib/2.9.4] [CPH1803, CPH1803, OPPO, 27] [goog.exo.core, goog.exo.okhttp]
 01-14 17:03:28.355 15347 21439 D SurfaceUtils: disconnecting from surface 0x768210f010, reason disconnectFromSurface
-01-14 17:03:28.356 15347 21406 I MediaCodec: Video release()
+01-14 17:03:28.356 15347 21406 I MediaCodec: xxx release()
 01-14 17:03:28.356  1162  2801 I OMX-VDEC-1080P: omx_vdec::component_deinit() complete
 01-14 17:03:28.361  1162  2801 I OMX-VDEC-1080P: Exit OMX vdec Destructor: fd=7
-01-14 17:03:28.361  1162  2801 I OMX-VDEC-1080P: Video slvp perflock released
+01-14 17:03:28.361  1162  2801 I OMX-VDEC-1080P: xxx slvp perflock released
 01-14 17:03:28.365 15347 21406 I MediaCodec: ~MediaCodec()
-01-14 17:03:28.365 15347 21406 W MediaAnalyticsItem: Unable to record: (codec:0:-1:-11:0:10:android.media.mediacodec.codec=OMX.qcom.video.decoder.avc:android.media.mediacodec.mode=video:android.media.mediacodec.secure=0:android.media.mediacodec.width=640:android.media.mediacodec.height=592:android.media.mediacodec.rotation-degrees=0:android.media.mediacodec.maxwidth=640:android.media.mediacodec.maxheight=592:android.media.mediacodec.mime=video/avc:android.media.mediacodec.bytesin=45664:) [forcenew=0]
+01-14 17:03:28.365 15347 21406 W MediaAnalyticsItem: Unable to record: (codec:0:-1:-11:0:10:android.media.mediacodec.codec=OMX.qcom.xxx.decoder.avc:android.media.mediacodec.mode=xxx:android.media.mediacodec.secure=0:android.media.mediacodec.width=640:android.media.mediacodec.height=592:android.media.mediacodec.rotation-degrees=0:android.media.mediacodec.maxwidth=640:android.media.mediacodec.maxheight=592:android.media.mediacodec.mime=xxx/avc:android.media.mediacodec.bytesin=45664:) [forcenew=0]
 01-14 17:03:28.365 15347 21406 I ACodec  : ~ACodec()
 01-14 17:03:28.367 15347 21406 I MediaCodec: stop()
 01-14 17:03:28.367 15347 21502 D AudioTrack: flush() output 21 stream 3 session 473 state 1
@@ -2791,38 +2791,38 @@
 01-14 17:03:28.935  1627  2919 I ActivityManager: START u0 {cmp=com.nemo.starhalo/.ui.tag.SearchActivity (has extras)} from uid 10541 and from pid 15347
 01-14 17:03:29.180 15347 15347 D ViewRootImpl: swipeFromBottom mIgnoring === false downY 712 mStatusBarHeight 54
 01-14 17:03:28.916 15347 15347 I Choreographer: Skipped 1 frames!  The application may be doing too much work on its main thread.
-01-14 17:03:29.197 15347 15347 I ExoPlayerImpl: Init b02197 [ExoPlayerLib/2.9.4] [CPH1803, CPH1803, OPPO, 27]
+01-14 17:03:29.197 15347 15347 I ExoxxxImpl: Init b02197 [ExoxxxLib/2.9.4] [CPH1803, CPH1803, OPPO, 27]
 01-14 17:03:29.218  1627  2919 D NetworkPolicy: uid 10541 is allowed on unmetered network
 01-14 17:03:29.221  1627  2919 D NetworkPolicy: uid 10541 is allowed on unmetered network
 01-14 17:03:29.234  1627  2700 D NetworkPolicy: uid 10541 is allowed on unmetered network
-01-14 17:03:29.255 15347 21506 I MediaCodec: CreateByComponentName(), name = OMX.qcom.video.decoder.avc
+01-14 17:03:29.255 15347 21506 I MediaCodec: CreateByComponentName(), name = OMX.qcom.xxx.decoder.avc
 01-14 17:03:29.255 15347 21506 I MediaCodec: new MediaCodec()
 01-14 17:03:29.255 15347 21506 I ACodec  : new ACodec()
 01-14 17:03:29.256 15347 21510 I ACodec  : onAllocateComponent()
 01-14 17:03:29.257 15347 21510 I ACodec  : ----------------------------------------
-01-14 17:03:29.257 15347 21510 I ACodec  : matched component [OMX.qcom.video.decoder.avc]
+01-14 17:03:29.257 15347 21510 I ACodec  : matched component [OMX.qcom.xxx.decoder.avc]
 01-14 17:03:29.257 15347 21510 I ACodec  : ----------------------------------------
 01-14 17:03:29.258 15347 21510 I OMXClient: Treble IOmx obtained
-01-14 17:03:29.259  1162  2801 I OMXMaster: makeComponentInstance(OMX.qcom.video.decoder.avc) in omx@1.0-service process
+01-14 17:03:29.259  1162  2801 I OMXMaster: makeComponentInstance(OMX.qcom.xxx.decoder.avc) in omx@1.0-service process
 01-14 17:03:29.262  1162  2801 E         : Service not available yet
-01-14 17:03:29.267  1162  2801 I OMX-VDEC-1080P: Video slvp perflock acquired
+01-14 17:03:29.267  1162  2801 I OMX-VDEC-1080P: xxx slvp perflock acquired
 01-14 17:03:29.267   683   771 E ANDR-PERF-MPCTL: Invalid profile no. 0, total profiles 0 only
-01-14 17:03:29.268  1162  2801 I OMX-VDEC-1080P: component_init: OMX.qcom.video.decoder.avc : fd=7
+01-14 17:03:29.268  1162  2801 I OMX-VDEC-1080P: component_init: OMX.qcom.xxx.decoder.avc : fd=7
 01-14 17:03:29.274  1162  2801 I OMX-VDEC-1080P: omx_vdec::component_init() success : fd=7
-01-14 17:03:29.274 15347 21510 I ACodec  : Successfully allocate component [OMX.qcom.video.decoder.avc]
+01-14 17:03:29.274 15347 21510 I ACodec  : Successfully allocate component [OMX.qcom.xxx.decoder.avc]
 01-14 17:03:29.276 15347 21506 I MediaCodec: configure()
 01-14 17:03:29.277 15347 21509 D SurfaceUtils: connecting to surface 0x767eb5d010, reason connectToSurface
-01-14 17:03:29.277 15347 21509 I MediaCodec: [OMX.qcom.video.decoder.avc] setting surface generation to 15715337
+01-14 17:03:29.277 15347 21509 I MediaCodec: [OMX.qcom.xxx.decoder.avc] setting surface generation to 15715337
 01-14 17:03:29.277 15347 21509 D SurfaceUtils: disconnecting from surface 0x767eb5d010, reason connectToSurface(reconnect)
 01-14 17:03:29.277 15347 21509 D SurfaceUtils: connecting to surface 0x767eb5d010, reason connectToSurface(reconnect)
-01-14 17:03:29.278 15347 21510 I ACodec  : configureCodec() mime = video/avc
+01-14 17:03:29.278 15347 21510 I ACodec  : configureCodec() mime = xxx/avc
 01-14 17:03:29.278  1162 11006 E OMX-VDEC-1080P: Enable/Disable allocate-native-handle allowed only on input port!
 01-14 17:03:29.278  1162 11006 E OMX-VDEC-1080P: set_parameter: Error: 0x80001019, setting param 0x7f00005d
 01-14 17:03:29.278  1162 11006 E OMXNodeInstance: setParameter(0xec86c5c4:qcom.decoder.avc, OMX.google.android.index.allocateNativeHandle(0x7f00005d): Output:1 en=0) ERROR: UnsupportedSetting(0x80001019)
-01-14 17:03:29.278 15347 21510 I ExtendedACodec: setupVideoDecoder()
+01-14 17:03:29.278 15347 21510 I ExtendedACodec: setupxxxDecoder()
 01-14 17:03:29.282 15347 21510 I ExtendedACodec: Decoder will be in frame by frame mode
 01-14 17:03:29.284  1162 11006 E OMXNodeInstance: getConfig(0xec86c5c4:qcom.decoder.avc, ??(0x7f000062)) ERROR: UnsupportedSetting(0x80001019)
-01-14 17:03:29.286 15347 21506 I MediaCodec: Video start()
+01-14 17:03:29.286 15347 21506 I MediaCodec: xxx start()
 01-14 17:03:29.288   658   658 W /system/bin/hw/android.hidl.allocator@1.0-service: ashmem_create_region(6078464) returning hidl_memory(0x734382c520, 6078464)
 01-14 17:03:29.292   658   658 I chatty  : uid=1000(system) allocator@1.0-s identical 2 lines
 01-14 17:03:29.295   658   658 W /system/bin/hw/android.hidl.allocator@1.0-service: ashmem_create_region(6078464) returning hidl_memory(0x734382c520, 6078464)
@@ -3097,7 +3097,7 @@
 01-14 17:03:31.485 15347 21409 W System.err: 	at java.lang.Thread.sleep(Native Method)
 01-14 17:03:31.485 15347 21409 W System.err: 	at java.lang.Thread.sleep(Thread.java:373)
 01-14 17:03:31.485 15347 21409 W System.err: 	at java.lang.Thread.sleep(Thread.java:314)
-01-14 17:03:31.485 15347 21409 W System.err: 	at com.nemo.starhalo.player.a.c$b.run(SourceFile:415)
+01-14 17:03:31.485 15347 21409 W System.err: 	at com.nemo.starhalo.xxx.a.c$b.run(SourceFile:415)
 01-14 17:03:31.485 15347 21409 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
 01-14 17:03:31.485 15347 21409 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
 01-14 17:03:31.485 15347 21409 W System.err: 	at java.lang.Thread.run(Thread.java:764)
@@ -3164,16 +3164,16 @@
 01-14 17:03:37.584  1152  2777 I FFmpegExtractor: SniffFFMPEG (initial confidence: 0.800000, mime: )
 01-14 17:03:37.589  1152  2777 D FFmpegExtractor: suppoted codec(h264) by official Stagefright
 01-14 17:03:37.589  1152  2777 D FFmpegExtractor: suppoted codec(aac) by official Stagefright
-01-14 17:03:37.590  1152  2777 D FFmpegExtractor: ffmpeg detected media content as 'video/mp4' with confidence 0.08
-01-14 17:03:37.590  1152  2777 I MediaExtractor: Autodetected media content as 'video/mp4' with confidence 0.80
+01-14 17:03:37.590  1152  2777 D FFmpegExtractor: ffmpeg detected media content as 'xxx/mp4' with confidence 0.08
+01-14 17:03:37.590  1152  2777 I MediaExtractor: Autodetected media content as 'xxx/mp4' with confidence 0.80
 01-14 17:03:37.590  1152  2777 I SampleTable: There are reordered frames present.
 01-14 17:03:37.591  1152  2777 D MPEG4Extractor: Mpeg4 audio channel = 2 ,sample rate = 44100
 01-14 17:03:37.592  1154  1154 E MediaExtractor: Trace connect 0xe4d61720 0xe4d12040
-01-14 17:03:37.594  1154  1154 I MediaExtractor: found video mime = video/avc
+01-14 17:03:37.594  1154  1154 I MediaExtractor: found xxx mime = xxx/avc
 01-14 17:03:37.594  1154  1154 I MediaExtractor: found audio mime = audio/mp4a-latm
 01-14 17:03:37.600 15561 21530 V MediaMetadataRetriever: closeFd()
 01-14 17:03:37.600 15561 21530 V MediaMetadataRetriever: mFd is valid, close it.
-01-14 17:03:37.602  1152  9975 W MediaAnalyticsItem: Unable to record: (extractor:0:-1:-11:0:3:android.media.mediaextractor.fmt=MPEG4Extractor:android.media.mediaextractor.ntrk=2:android.media.mediaextractor.mime=video/mp4:) [forcenew=0]
+01-14 17:03:37.602  1152  9975 W MediaAnalyticsItem: Unable to record: (extractor:0:-1:-11:0:3:android.media.mediaextractor.fmt=MPEG4Extractor:android.media.mediaextractor.ntrk=2:android.media.mediaextractor.mime=xxx/mp4:) [forcenew=0]
 01-14 17:03:37.602 15561 21530 W providerUtils: computeTakenDcim failed!
 01-14 17:03:37.602 15561 21530 W providerUtils: java.text.ParseException: Unparseable date: "-281576049_welike"
 01-14 17:03:37.602 15561 21530 W providerUtils: 	at java.text.DateFormat.parse(DateFormat.java:362)
@@ -3193,7 +3193,7 @@
 01-14 17:03:37.615 15561 16052 E MediaTraceUtil: writeTraceToFile trace is null or size is 0.so return
 01-14 17:03:37.619  1627  2912 I ActivityManager: START u0 {act=android.intent.action.SEND typ=*/* flg=0x1 pkg=com.whatsapp cmp=com.whatsapp/.ContactPicker clip={*/* T:Hey! I found a good content on Welike just want to share with you, Click ！promise you will definitely like it！🙋 👇🙋👉http://67620156.hillo.app/detail?item_id=v17o70c6iy&lan=telugu
 01-14 17:03:37.619  1627  2912 I ActivityManager: What are you waiting for? 🤷 
-01-14 17:03:37.619  1627  2912 I ActivityManager: Find awesome latest status videos to show your feelings..💞 Download Welike now! 💛
+01-14 17:03:37.619  1627  2912 I ActivityManager: Find awesome latest status xxxs to show your feelings..💞 Download Welike now! 💛
 01-14 17:03:37.619  1627  2912 I ActivityManager: http://hillo.app/download} (has extras)} from uid 10541 and from pid 15347
 01-14 17:03:37.619  1627  2912 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
 01-14 17:03:37.619  1627  2912 W Binder  : java.lang.Throwable
@@ -3340,14 +3340,14 @@
 01-14 17:03:37.777 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/559497580_welike.mp4
 01-14 17:03:37.777 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/__गीत_एवं_संगीत_-449876729_welike.jpg
 01-14 17:03:37.777 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Love_whatsapp_status__welike.mp4
-01-14 17:03:37.777 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/_GOODNIGHTSTATUS_New_Love_mashup_Dj_Remix_Whatsapp_Status_Video_Hindi_Old_Song_Remix_|_Love_Status_welike.mp4
+01-14 17:03:37.777 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/_GOODNIGHTSTATUS_New_Love_mashup_Dj_Remix_Whatsapp_Status_xxx_Hindi_Old_Song_Remix_|_Love_Status_welike.mp4
 01-14 17:03:37.777 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/New_romantic_whatsapp_status__welike.mp4
 01-14 17:03:37.777 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/__गीत_एवं_संगीत__welike.jpg
 01-14 17:03:37.778 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/इतनी_स्वादिष्ट_भेल_देखकर_मुँह_में_पानी_आएगा_welike.mp4
 01-14 17:03:37.778 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/-1600117646_welike.mp4
 01-14 17:03:37.778 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/sholey_dialog..Dharm_paaji😀😀_welike.mp4
 01-14 17:03:37.778 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/269512792_welike.mp4
-01-14 17:03:37.778 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/__रोमांचक_प्यार_💖_New_Romantic_Love_Whatsapp_Status_Video_💖_|_
+01-14 17:03:37.778 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/__रोमांचक_प्यार_💖_New_Romantic_Love_Whatsapp_Status_xxx_💖_|_
 01-14 17:03:37.778 15347 21409 D LocalImageLoader: 
 01-14 17:03:37.778 15347 21409 D LocalImageLoader: _welike.mp4
 01-14 17:03:37.778 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Reshampal_yadav_welike.jpg
@@ -3392,8 +3392,8 @@
 01-14 17:03:37.779 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Screenshots/Screenshot_2019-09-26-16-20-35-92.png
 01-14 17:03:37.780 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Screenshots/Screenshot_2019-09-26-15-46-17-99.png
 01-14 17:03:37.780 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/2019-09-25-171235534.mp4
-01-14 17:03:37.780 15347 21409 D LocalImageLoader: /storage/emulated/0/VidMate/download/Joker_(2019)_Final_Trailer(480p).mp4
-01-14 17:03:37.780 15347 21409 D LocalImageLoader: /storage/emulated/0/VidMate/download/Lionel_Messi_reaction_-_The_Best_FIFA_Men's_Player_2019(480p).mp4
+01-14 17:03:37.780 15347 21409 D LocalImageLoader: /storage/emulated/0/xxx/download/Joker_(2019)_Final_Trailer(480p).mp4
+01-14 17:03:37.780 15347 21409 D LocalImageLoader: /storage/emulated/0/xxx/download/Lionel_Messi_reaction_-_The_Best_FIFA_Men's_xxx_2019(480p).mp4
 01-14 17:03:37.780 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/0e23b4c1-4885-4a67-be63-bb60555d5db4_welike.jpg
 01-14 17:03:37.780 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/2b4ac76b-b3e5-4bbb-b219-b1ce00321299_welike.jpg
 01-14 17:03:37.780 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/98aae184-ec6e-4453-b122-4bf3d702b480_welike.jpg
@@ -3432,14 +3432,14 @@
 01-14 17:03:37.781 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/-191540043_welike.jpg
 01-14 17:03:37.781 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/1055647562_welike.mp4
 01-14 17:03:37.781 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/1399852160_welike.mp4
-01-14 17:03:37.781 15347 21409 D LocalImageLoader: /storage/emulated/0/VidMate/download/Lil_Duval,_TOM._G,_KaMillion_-_City_Boy_(Official_Video)(144p).mp4
-01-14 17:03:37.781 15347 21409 D LocalImageLoader: /storage/emulated/0/VidMate/download/Day_-_"Espaço"_Live_Performance_|_Vevo(144p).mp4
+01-14 17:03:37.781 15347 21409 D LocalImageLoader: /storage/emulated/0/xxx/download/Lil_Duval,_TOM._G,_KaMillion_-_City_Boy_(Official_xxx)(144p).mp4
+01-14 17:03:37.781 15347 21409 D LocalImageLoader: /storage/emulated/0/xxx/download/Day_-_"Espaço"_Live_Performance_|_Vevo(144p).mp4
 01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Screenshots/Screenshot_2019-08-29-14-00-08-35.png
-01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/VidMate/download/Golden_Retriever_Parents_Watching_Over_Their_Newborn_Puppies(144p).mp4
+01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/xxx/download/Golden_Retriever_Parents_Watching_Over_Their_Newborn_Puppies(144p).mp4
 01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/-987277084_welike.gif
 01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/IMG20190822181604.jpg
 01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/-311670838_welike.jpg
-01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Very_Sad_Heart_Touching♥️_Status_Video_welike.mp4
+01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Very_Sad_Heart_Touching♥️_Status_xxx_welike.mp4
 01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Ye_Kya_Hua_!!!_welike.mp4
 01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/sarvan__👫👫_welike.mp4
 01-14 17:03:37.782 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/1592893500_welike.mp4
@@ -3481,7 +3481,7 @@
 01-14 17:03:37.783 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/mad_men_GIF_welike.gif
 01-14 17:03:37.783 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/_monsoon__monsoonride__taarashukla01__SwagStepChallenge__publicchallenge_@tiktok_@tiktok_india_welike.mp4
 01-14 17:03:37.783 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/1959216527_welike.mp4
-01-14 17:03:37.783 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Want more cool videos like thisClick here_VMate_welike.mp4
+01-14 17:03:37.783 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Want more cool xxxs like thisClick here_VMate_welike.mp4
 01-14 17:03:37.783 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/Guru_Purnima_welike.jpg
 01-14 17:03:37.783 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/_DamaldumilDialogue__welike.mp4
 01-14 17:03:37.784 15347 21409 D LocalImageLoader: /storage/emulated/0/DCIM/Camera/1386188937_welike.jpg
@@ -3707,48 +3707,48 @@
 01-14 17:03:39.653  1152  9975 I FFmpegExtractor: SniffFFMPEG (initial confidence: 0.800000, mime: )
 01-14 17:03:39.658  1152  9975 D FFmpegExtractor: suppoted codec(h264) by official Stagefright
 01-14 17:03:39.659  1152  9975 D FFmpegExtractor: suppoted codec(aac) by official Stagefright
-01-14 17:03:39.659  1152  9975 D FFmpegExtractor: ffmpeg detected media content as 'video/mp4' with confidence 0.08
-01-14 17:03:39.659  1152  9975 I MediaExtractor: Autodetected media content as 'video/mp4' with confidence 0.80
+01-14 17:03:39.659  1152  9975 D FFmpegExtractor: ffmpeg detected media content as 'xxx/mp4' with confidence 0.08
+01-14 17:03:39.659  1152  9975 I MediaExtractor: Autodetected media content as 'xxx/mp4' with confidence 0.80
 01-14 17:03:39.660  1152  9975 I SampleTable: There are reordered frames present.
 01-14 17:03:39.661  1152  9975 D MPEG4Extractor: Mpeg4 audio channel = 2 ,sample rate = 44100
 01-14 17:03:39.663  1154  1154 E MediaExtractor: Trace connect 0xe4d61020 0xe4d12040
-01-14 17:03:39.665  1154  1154 I MediaExtractor: found video mime = video/avc
+01-14 17:03:39.665  1154  1154 I MediaExtractor: found xxx mime = xxx/avc
 01-14 17:03:39.666  1154  1154 I MediaExtractor: found audio mime = audio/mp4a-latm
 01-14 17:03:39.666  1154  6049 E MMListParser: open file /proc/15561/cmdline err 13
-01-14 17:03:39.669  1154  6049 I MediaCodec: CreateByComponentName(), name = OMX.qcom.video.decoder.avc
+01-14 17:03:39.669  1154  6049 I MediaCodec: CreateByComponentName(), name = OMX.qcom.xxx.decoder.avc
 01-14 17:03:39.669  1154  6049 I MediaCodec: new MediaCodec()
 01-14 17:03:39.669  1154  6049 I ACodec  : new ACodec()
 01-14 17:03:39.670  1154 21637 I ACodec  : onAllocateComponent()
 01-14 17:03:39.670  1154 21637 I ACodec  : ----------------------------------------
-01-14 17:03:39.670  1154 21637 I ACodec  : matched component [OMX.qcom.video.decoder.avc]
+01-14 17:03:39.670  1154 21637 I ACodec  : matched component [OMX.qcom.xxx.decoder.avc]
 01-14 17:03:39.670  1154 21637 I ACodec  : ----------------------------------------
 01-14 17:03:39.672  1154 21637 I OMXClient: Treble IOmx obtained
-01-14 17:03:39.672  1162  2801 I OMXMaster: makeComponentInstance(OMX.qcom.video.decoder.avc) in omx@1.0-service process
+01-14 17:03:39.672  1162  2801 I OMXMaster: makeComponentInstance(OMX.qcom.xxx.decoder.avc) in omx@1.0-service process
 01-14 17:03:39.677  1162  2801 E         : Service not available yet
-01-14 17:03:39.680  1162  2801 I OMX-VDEC-1080P: Video slvp perflock released
-01-14 17:03:39.680  1162  2801 I OMX-VDEC-1080P: component_init: OMX.qcom.video.decoder.avc : fd=38
+01-14 17:03:39.680  1162  2801 I OMX-VDEC-1080P: xxx slvp perflock released
+01-14 17:03:39.680  1162  2801 I OMX-VDEC-1080P: component_init: OMX.qcom.xxx.decoder.avc : fd=38
 01-14 17:03:39.695  1162  2801 I OMX-VDEC-1080P: omx_vdec::component_init() success : fd=38
-01-14 17:03:39.696  1154 21637 I ACodec  : Successfully allocate component [OMX.qcom.video.decoder.avc]
+01-14 17:03:39.696  1154 21637 I ACodec  : Successfully allocate component [OMX.qcom.xxx.decoder.avc]
 01-14 17:03:39.699  1154  6049 I MediaCodec: configure()
-01-14 17:03:39.702  1154 21637 I ACodec  : configureCodec() mime = video/avc
-01-14 17:03:39.703  1154 21637 I ExtendedACodec: setupVideoDecoder()
+01-14 17:03:39.702  1154 21637 I ACodec  : configureCodec() mime = xxx/avc
+01-14 17:03:39.703  1154 21637 I ExtendedACodec: setupxxxDecoder()
 01-14 17:03:39.705  1162 10113 E OMXNodeInstance: getParameter(0xf2d83204:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
 01-14 17:03:39.706  1162  2801 E OMXNodeInstance: getParameter(0xf2d83204:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
-01-14 17:03:39.714  1154 21637 D ACodec  : Setting [OMX.qcom.video.decoder.avc] input port buffer number: 1
+01-14 17:03:39.714  1154 21637 D ACodec  : Setting [OMX.qcom.xxx.decoder.avc] input port buffer number: 1
 01-14 17:03:39.715  1162  2809 E OMX-VDEC-1080P: ERROR: IP Requirements(#4: 6078464) Requested(#1: 6078464)
 01-14 17:03:39.715  1162  2809 E OMX-VDEC-1080P: set_parameter: Error: 0x80001005, setting param 0x2000001
 01-14 17:03:39.715  1162  2809 E OMXNodeInstance: setParameter(0xf2d83204:qcom.decoder.avc, ParamPortDefinition(0x2000001)) ERROR: BadParameter(0x80001005)
-01-14 17:03:39.715  1154 21637 W ACodec  : Fail to set [OMX.qcom.video.decoder.avc] input port buffer number: 1
-01-14 17:03:39.715  1154 21637 D ACodec  : Setting [OMX.qcom.video.decoder.avc] output port buffer number: 1
+01-14 17:03:39.715  1154 21637 W ACodec  : Fail to set [OMX.qcom.xxx.decoder.avc] input port buffer number: 1
+01-14 17:03:39.715  1154 21637 D ACodec  : Setting [OMX.qcom.xxx.decoder.avc] output port buffer number: 1
 01-14 17:03:39.727  1162 10113 E OMX-VDEC-1080P: OP Requirements: Client count(1) insufficient v/s requested(18)
 01-14 17:03:39.727  1162 10113 E OMX-VDEC-1080P: ERROR: OP Requirements(#18: 118784) Requested(#1: 118784)
 01-14 17:03:39.727  1162 10113 E OMX-VDEC-1080P: set_parameter: Error: 0x80001005, setting param 0x2000001
 01-14 17:03:39.727  1162 10113 E OMXNodeInstance: setParameter(0xf2d83204:qcom.decoder.avc, ParamPortDefinition(0x2000001)) ERROR: BadParameter(0x80001005)
-01-14 17:03:39.728  1154 21637 W ACodec  : Fail to set [OMX.qcom.video.decoder.avc] output port buffer number: 1
+01-14 17:03:39.728  1154 21637 W ACodec  : Fail to set [OMX.qcom.xxx.decoder.avc] output port buffer number: 1
 01-14 17:03:39.747  1154 21637 I ExtendedACodec: Decoder will be in frame by frame mode
 01-14 17:03:39.751  1154 21637 I ExtendedACodec: Thumbnail mode enabled.
 01-14 17:03:39.753  1162 30936 E OMXNodeInstance: getParameter(0xf2d83204:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
-01-14 17:03:39.756  1154  6049 I MediaCodec: Video start()
+01-14 17:03:39.756  1154  6049 I MediaCodec: xxx start()
 01-14 17:03:39.760   658   658 W /system/bin/hw/android.hidl.allocator@1.0-service: ashmem_create_region(6078464) returning hidl_memory(0x734382c520, 6078464)
 01-14 17:03:39.768   658   658 I chatty  : uid=1000(system) allocator@1.0-s identical 2 lines
 01-14 17:03:39.771   658   658 W /system/bin/hw/android.hidl.allocator@1.0-service: ashmem_create_region(6078464) returning hidl_memory(0x734382c520, 6078464)
@@ -3758,18 +3758,18 @@
 01-14 17:03:39.814   658   658 W /system/bin/hw/android.hidl.allocator@1.0-service: ashmem_create_region(569344) returning hidl_memory(0x734382c520, 569344)
 01-14 17:03:39.831  1162 30936 E OMXNodeInstance: getParameter(0xf2d83204:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
 01-14 17:03:39.835  1162 10001 E OMXNodeInstance: getParameter(0xf2d83204:qcom.decoder.avc, ??(0x7f000044)) ERROR: UnsupportedSetting(0x80001019)
-01-14 17:03:39.850  1154  6049 I MediaCodec: Video release()
+01-14 17:03:39.850  1154  6049 I MediaCodec: xxx release()
 01-14 17:03:39.874  1162 10001 I OMX-VDEC-1080P: omx_vdec::component_deinit() complete
 01-14 17:03:39.878  1162 10001 I OMX-VDEC-1080P: Exit OMX vdec Destructor: fd=38
-01-14 17:03:39.879  1162 10001 I OMX-VDEC-1080P: Video slvp perflock acquired
+01-14 17:03:39.879  1162 10001 I OMX-VDEC-1080P: xxx slvp perflock acquired
 01-14 17:03:39.879   683   771 E ANDR-PERF-MPCTL: Invalid profile no. 0, total profiles 0 only
 01-14 17:03:39.883  1154  6049 I MediaCodec: ~MediaCodec()
-01-14 17:03:39.883  1154  6049 W MediaAnalyticsItem: Unable to record: (codec:0:-1:-11:0:10:android.media.mediacodec.codec=OMX.qcom.video.decoder.avc:android.media.mediacodec.mode=video:android.media.mediacodec.secure=0:android.media.mediacodec.profile=8:android.media.mediacodec.level=256:android.media.mediacodec.width=640:android.media.mediacodec.height=592:android.media.mediacodec.rotation-degrees=0:android.media.mediacodec.mime=video/avc:android.media.mediacodec.bytesin=29065:) [forcenew=0]
+01-14 17:03:39.883  1154  6049 W MediaAnalyticsItem: Unable to record: (codec:0:-1:-11:0:10:android.media.mediacodec.codec=OMX.qcom.xxx.decoder.avc:android.media.mediacodec.mode=xxx:android.media.mediacodec.secure=0:android.media.mediacodec.profile=8:android.media.mediacodec.level=256:android.media.mediacodec.width=640:android.media.mediacodec.height=592:android.media.mediacodec.rotation-degrees=0:android.media.mediacodec.mime=xxx/avc:android.media.mediacodec.bytesin=29065:) [forcenew=0]
 01-14 17:03:39.884  1154  6049 I ACodec  : ~ACodec()
 01-14 17:03:39.892 15561 15585 V MediaMetadataRetriever: closeFd()
 01-14 17:03:39.892 15561 15585 V MediaMetadataRetriever: mFd is valid, close it.
 01-14 17:03:39.892 15561 15585 V MediaMetadataRetriever: closeFd()
-01-14 17:03:39.895  1152  9975 W MediaAnalyticsItem: Unable to record: (extractor:0:-1:-11:0:3:android.media.mediaextractor.fmt=MPEG4Extractor:android.media.mediaextractor.ntrk=2:android.media.mediaextractor.mime=video/mp4:) [forcenew=0]
+01-14 17:03:39.895  1152  9975 W MediaAnalyticsItem: Unable to record: (extractor:0:-1:-11:0:3:android.media.mediaextractor.fmt=MPEG4Extractor:android.media.mediaextractor.ntrk=2:android.media.mediaextractor.mime=xxx/mp4:) [forcenew=0]
 01-14 17:03:40.093  1627  2434 I MessageQueue: searched 10000messages,recent msg is { when=-1d9h46m10s944ms callback=com.android.server.wifi.OppoTcpInfoMonitor$1 target=android.os.Handler }head message is { when=-1d23h20m1s9ms callback=com.android.server.wifi.OppoTcpInfoMonitor$1 target=android.os.Handler }
 01-14 17:03:40.095  1627  2434 I MessageQueue: searched 20000messages,recent msg is { when=-20h19m31s134ms callback=com.android.server.wifi.OppoTcpInfoMonitor$1 target=android.os.Handler }head message is { when=-1d23h20m1s12ms callback=com.android.server.wifi.OppoTcpInfoMonitor$1 target=android.os.Handler }
 01-14 17:03:40.096  1627  2434 I MessageQueue: searched 30000messages,recent msg is { when=-7h7m36s306ms callback=com.android.server.wifi.OppoTcpInfoMonitor$1 target=android.os.Handler }head message is { when=-1d23h20m1s13ms callback=com.android.server.wifi.OppoTcpInfoMonitor$1 target=android.os.Handler }

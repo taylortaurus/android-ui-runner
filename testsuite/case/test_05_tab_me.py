@@ -33,7 +33,7 @@ class tab_me(unittest.TestCase, BasePage):
             action.exist_click(text='不用了')
             action.exist_click(text='确定')
             action.exist_click(text='Done')
-            self.d(text="VIDEO").click(timeout=5)
+            self.d(text="xxx").click(timeout=5)
         self.screenshot()
 
     @testcase
@@ -44,7 +44,7 @@ class tab_me(unittest.TestCase, BasePage):
         self.d(text="File Transfer").click(timeout=5)
 
         ###### Receive
-        self.d(resourceId=res['com.app.videoplayer:id/ivReceive']).click(timeout=5)
+        self.d(resourceId=res['com.app.xxxxxx:id/ivReceive']).click(timeout=5)
         self.d(text="Allow").click(timeout=5)
         self.d(resourceId="com.android.permissioncontroller:id/permission_allow_foreground_only_button").click(timeout=5)
         self.assertTrue(self.d(text='Invite your friend to scan the QR code to transfer file.').exists(timeout=10),msg='打开二维码失败')
@@ -53,8 +53,8 @@ class tab_me(unittest.TestCase, BasePage):
         action.exist_click(text='Yes')
 
         ###### Send
-        self.d(resourceId='com.app.videoplayer:id/ivSend').click(timeout=5)
-        self.assertTrue(self.d(text='app_video.mp4').exists(timeout=10), msg='视频列表没有显示视频')
+        self.d(resourceId='com.app.xxxxxx:id/ivSend').click(timeout=5)
+        self.assertTrue(self.d(text='app_xxx.mp4').exists(timeout=10), msg='视频列表没有显示视频')
         self.d(text="MUSIC").click(timeout=5)
         self.assertTrue(self.d(text='test_music1').exists(timeout=10), msg='音乐列表没有显示音乐')
         self.screenshot()
@@ -63,14 +63,14 @@ class tab_me(unittest.TestCase, BasePage):
         self.assertTrue(self.d(text='Download').exists(timeout=10), msg='音乐列表没有显示文件夹')
         self.screenshot()
 
-        self.d(text="VIDEO").click(timeout=5)
+        self.d(text="xxx").click(timeout=5)
         self.d(text="Folder").click(timeout=5)
         self.assertTrue(self.d(text='download').exists(timeout=10), msg='视频列表没有显示文件夹')
         self.screenshot()
 
         self.d(text="File").click(timeout=5)
-        self.d(text="app_video.mp4").click(timeout=5)
-        num = self.d(resourceId=res['com.app.videoplayer:id/tvNum']).get_text(timeout=5)
+        self.d(text="app_xxx.mp4").click(timeout=5)
+        num = self.d(resourceId=res['com.app.xxxxxx:id/tvNum']).get_text(timeout=5)
         self.assertEqual(num, '(1)', msg='红点数字不正确')
         self.screenshot()
 
@@ -88,14 +88,14 @@ class tab_me(unittest.TestCase, BasePage):
         app.case_restart_check(text='ME')
         self.d(text="ME").click(timeout=5)
         self.d(text="MP3 Converter").click(timeout=5)
-        self.d(resourceId=res['com.app.videoplayer:id/ivAdd']).click()
+        self.d(resourceId=res['com.app.xxxxxx:id/ivAdd']).click()
         self.d(text="Android").click(timeout=5)
         self.d(text="音乐盒.ogg").click(timeout=5)
         self.d(text="Convert").click(timeout=5)
         self.d(text="Got It").click(timeout=5)
         self.screenshot()
         self.assertTrue(self.d(text="音乐盒").exists(timeout=5),msg='没有发现音频文件')
-        self.d(resourceId=res['com.app.videoplayer:id/ivMore']).click()
+        self.d(resourceId=res['com.app.xxxxxx:id/ivMore']).click()
         self.d(scrollable=True).scroll.toEnd()  # 滚动到最底部
         self.d(text="Delete").click(timeout=5)
         self.d(text="OK").click(timeout=5)
@@ -107,12 +107,12 @@ class tab_me(unittest.TestCase, BasePage):
         app.case_restart_check(text='ME')
         self.d(text="ME").click(timeout=10)
         self.d(text="Downloads").click(timeout=5)
-        self.assertTrue(self.d(resourceId=res['com.app.videoplayer:id/flCover']).exists(timeout=5),
+        self.assertTrue(self.d(resourceId=res['com.app.xxxxxx:id/flCover']).exists(timeout=5),
                         msg='下载管理器没有显示下载记录')
         self.screenshot()
 
         ###### 移动到隐私文件夹
-        self.d(resourceId=res['com.app.videoplayer:id/ivMore']).click(timeout=5)
+        self.d(resourceId=res['com.app.xxxxxx:id/ivMore']).click(timeout=5)
         self.d(text='Move into Privacy Folder').click(timeout=5)
         self.d(text='Yes').click(timeout=5)
 
@@ -135,7 +135,7 @@ class tab_me(unittest.TestCase, BasePage):
         app.case_restart_check(text='ME')
         self.d(text="ME").click(timeout=10)
         self.d(text="History").click(timeout=10)
-        self.assertTrue(self.d(resourceId=res['com.app.videoplayer:id/ivCover']).exists(timeout=5),
+        self.assertTrue(self.d(resourceId=res['com.app.xxxxxx:id/ivCover']).exists(timeout=5),
                         msg='播放记录不存在')
         self.screenshot()
         self.d.press('back')
@@ -181,7 +181,7 @@ class tab_me(unittest.TestCase, BasePage):
         app.case_restart_check(text='ME')
         self.d(text="ME").click(timeout=5)
         self.d(text="Rate us").click(timeout=5)
-        rateId = res['com.app.videoplayer:id/ratingBar']
+        rateId = res['com.app.xxxxxx:id/ratingBar']
         self.d.xpath(f'//*[@resource-id="{rateId}"]/android.widget.ImageView[5]').click(timeout=5)
         self.screenshot()
         self.d(text="Submit").click(timeout=5)
@@ -201,45 +201,45 @@ class tab_me(unittest.TestCase, BasePage):
                         msg='进入媒体管理失败')
 
         ###### 视频展示
-        self.assertTrue(self.d(resourceId=res['com.app.videoplayer:id/ivCover']).exists(timeout=5),
+        self.assertTrue(self.d(resourceId=res['com.app.xxxxxx:id/ivCover']).exists(timeout=5),
                         msg='视频没有展示')
 
         ###### 总空间计算
-        all_space_text = str(self.d(resourceId=res['com.app.videoplayer:id/tvStorageSpace']).get_text(timeout=5)) \
+        all_space_text = str(self.d(resourceId=res['com.app.xxxxxx:id/tvStorageSpace']).get_text(timeout=5)) \
             .replace('Used','').replace(' ','').split('/')[0]
         all_space_count = int(re.sub(r'[^0-9]', '', all_space_text))
         self.assertNotEqual(all_space_count, 0, msg='统计总大小异常')
 
 
         ###### 视频空间计算
-        video_space_text = self.d(resourceId=res['com.app.videoplayer:id/tvVideoCountSpace']).get_text(timeout=5)
-        video_space_count = int(re.sub(r'[^0-9]', '', video_space_text))
-        self.assertNotEqual(video_space_count, 0, msg='统计视频大小异常')
+        xxx_space_text = self.d(resourceId=res['com.app.xxxxxx:id/tvxxxCountSpace']).get_text(timeout=5)
+        xxx_space_count = int(re.sub(r'[^0-9]', '', xxx_space_text))
+        self.assertNotEqual(xxx_space_count, 0, msg='统计视频大小异常')
 
         ###### 音乐空间计算
-        music_space_text = self.d(resourceId=res['com.app.videoplayer:id/tvAudioCountSpace']).get_text(timeout=5)
+        music_space_text = self.d(resourceId=res['com.app.xxxxxx:id/tvAudioCountSpace']).get_text(timeout=5)
         music_space_count = int(re.sub(r'[^0-9]', '', music_space_text))
         self.assertNotEqual(music_space_count, 0, msg='统计音乐文件大小异常')
 
         self.screenshot()
 
-        ###### VIDEO列表展示
-        self.d(text="VIDEO").click(timeout=5)
-        self.assertTrue(self.d(resourceId=res['com.app.videoplayer:id/ivCover']).exists(timeout=5),
+        ###### xxx列表展示
+        self.d(text="xxx").click(timeout=5)
+        self.assertTrue(self.d(resourceId=res['com.app.xxxxxx:id/ivCover']).exists(timeout=5),
                         msg='视频没有展示')
         self.screenshot()
         self.d.press('back')
 
         ###### MUSIC列表展示
         self.d(text="MUSIC").click(timeout=5)
-        self.assertTrue(self.d(resourceId=res['com.app.videoplayer:id/tvSongName']).exists(timeout=5),
+        self.assertTrue(self.d(resourceId=res['com.app.xxxxxx:id/tvSongName']).exists(timeout=5),
                         msg='MUSIC列表音频没有展示')
         self.screenshot()
         self.d.press('back')
 
         ###### all列表的视频展示
-        self.d(resourceId=res['com.app.videoplayer:id/all']).click(timeout=5)
-        self.assertTrue(self.d(resourceId=res['com.app.videoplayer:id/ivCover']).exists(timeout=5),
+        self.d(resourceId=res['com.app.xxxxxx:id/all']).click(timeout=5)
+        self.assertTrue(self.d(resourceId=res['com.app.xxxxxx:id/ivCover']).exists(timeout=5),
                         msg='ALL列表音频没有展示')
         self.screenshot()
         self.d.press('back')
@@ -247,7 +247,7 @@ class tab_me(unittest.TestCase, BasePage):
         ###### 从Downloads入口
         self.d.press('back')
         self.d(text="Downloads").click(timeout=5)
-        self.d(resourceId='com.app.videoplayer:id/ivArrow').click(timeout=5)
+        self.d(resourceId='com.app.xxxxxx:id/ivArrow').click(timeout=5)
         self.assertTrue(self.d(text='Internal storage').exists(timeout=5),
                         msg='从下载管理器进入媒体管理失败')
         self.screenshot()
@@ -316,28 +316,28 @@ class tab_me(unittest.TestCase, BasePage):
         self.d(text="ME").click(timeout=5)
 
         ###### ME页面的金币数量检查
-        me_coin = int(self.d(resourceId=res['com.app.videoplayer:id/tvCoin']).get_text(timeout=5))
+        me_coin = int(self.d(resourceId=res['com.app.xxxxxx:id/tvCoin']).get_text(timeout=5))
         self.assertNotEqual(me_coin, 0, msg='coin数量为0')
 
         self.d(text="My coin").click(timeout=5)
 
         ###### 任务中心的金币数量检查
-        task_coin_before = int(self.d(resourceId=res['com.app.videoplayer:id/tv_coins_value']).get_text(timeout=10))
+        task_coin_before = int(self.d(resourceId=res['com.app.xxxxxx:id/tv_coins_value']).get_text(timeout=10))
         self.assertEqual(task_coin_before, me_coin, msg='me页面的coin数量和任务中心的coin数量不一致')
 
         ###### 签到检查
         self.d(text="CHECK-IN").click(timeout=5)
-        self.assertTrue(self.d(resourceId=res['com.app.videoplayer:id/tv_coins_value']).exists(timeout=3),msg='签到UI没有改变')
-        sign_coin = int(self.d(resourceId=res['com.app.videoplayer:id/tv_coins_value']).get_text(timeout=10))
+        self.assertTrue(self.d(resourceId=res['com.app.xxxxxx:id/tv_coins_value']).exists(timeout=3),msg='签到UI没有改变')
+        sign_coin = int(self.d(resourceId=res['com.app.xxxxxx:id/tv_coins_value']).get_text(timeout=10))
         self.assertNotEqual(task_coin_before,sign_coin,msg='签到金币没有累计')
         self.screenshot()
 
         ###### 任务金币收集
         self.d(text="Collect").click(timeout=5)
         time.sleep(2)
-        self.assertFalse(self.d(text='Play a video').exists(timeout=3),msg='任务没有消失')
-        task_coin = int(self.d(resourceId=res['com.app.videoplayer:id/tv_coins_value']).get_text(timeout=10))
-        self.assertNotEqual(sign_coin, task_coin, msg='收集play a video的金币没有累计')
+        self.assertFalse(self.d(text='Play a xxx').exists(timeout=3),msg='任务没有消失')
+        task_coin = int(self.d(resourceId=res['com.app.xxxxxx:id/tv_coins_value']).get_text(timeout=10))
+        self.assertNotEqual(sign_coin, task_coin, msg='收集play a xxx的金币没有累计')
         self.screenshot()
         self.d.press('back')
 

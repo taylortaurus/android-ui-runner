@@ -15,7 +15,7 @@ from Public.common import common
 
 if __name__ == '__main__':
     common_handle = common()
-    cs = CaseStrategy(suite_path='testsuite',case_path='pdisk',case_pattern='test*.py')
+    cs = CaseStrategy(suite_path='testsuite',case_path='xxx',case_pattern='test*.py')
     cases = cs.collect_cases(suite=False)
     result = Drivers().run(cases)
     pass_num = result['pass']

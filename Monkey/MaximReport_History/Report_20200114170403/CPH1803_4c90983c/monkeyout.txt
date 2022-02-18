@@ -2956,7 +2956,7 @@ version:1.0.5.0107.2231
 [Maxim] // Sleeping for 200 milliseconds
 [Maxim] // Activity : com.whatsapp.ContactPicker in Intent
 [Maxim] // Rejecting start of Intent { act=android.intent.action.SEND typ=*/* flg=0x1 pkg=com.whatsapp cmp=com.whatsapp/.ContactPicker clip={*/* T:What are you waiting for? 🤷 
-Find awesome latest status videos to show your feelings..💞 Download Welike now! 💛
+Find awesome latest status xxxs to show your feelings..💞 Download Welike now! 💛
 http://hillo.app/download} (has extras) } in package com.whatsapp
 [Maxim] start build tree 2020-01-14 17:03:09.682 
 [Maxim] // Special Event : XPath = //android.widget.Button[@text='list'], Index = 0, Action = CLICK, Text = 
@@ -5094,7 +5094,7 @@ http://hillo.app/download} (has extras) } in package com.whatsapp
 [Maxim] // Sleeping for 200 milliseconds
 [Maxim] // Activity : com.whatsapp.ContactPicker in Intent
 [Maxim] // Rejecting start of Intent { act=android.intent.action.SEND typ=*/* flg=0x1 pkg=com.whatsapp cmp=com.whatsapp/.ContactPicker clip={*/* T:What are you waiting for? 🤷 
-Find awesome latest status videos to show your feelings..💞 Download Welike now! 💛
+Find awesome latest status xxxs to show your feelings..💞 Download Welike now! 💛
 http://hillo.app/download} (has extras) } in package com.whatsapp
 [Maxim] start build tree 2020-01-14 17:03:20.241 
 [Maxim] // Special Event : XPath = //android.widget.Button[@text='list'], Index = 0, Action = CLICK, Text = 

@@ -161,7 +161,7 @@ if __name__ == '__main__':
         """检查音频文件展示"""
         app.case_restart_check(text='MUSIC')//j检查当前位置是否为（text='MUSIC'），不是增重启
         self.d(text="MUSIC").click(timeout=2)
-        self.assertTrue(self.d(text="test_video").exists(timeout=2),msg='新增的音频文件没有展示')//断言成功通过，失败截图，下一个用例
+        self.assertTrue(self.d(text="test_xxx").exists(timeout=2),msg='新增的音频文件没有展示')//断言成功通过，失败截图，下一个用例
         self.screenshot()
 ```        
 

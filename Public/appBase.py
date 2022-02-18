@@ -52,7 +52,7 @@ class appBase(common):
             action.exist_click(text='不用了')
             action.exist_click(text='确定')
             action.exist_click(text='Done')
-            self.d(text="VIDEO").click(timeout=5)
+            self.d(text="xxx").click(timeout=5)
         print('vip检查通过')
 
     @exception_pass
@@ -64,23 +64,23 @@ class appBase(common):
         print('启动开屏页检查通过')
 
     @exception_pass
-    def clear_home_video(self):
-        """删除首页的video"""
-        self.d(text="VIDEO").click(timeout=2)
-        test_video_name = self.d(resourceId=res['com.app.videoplayer:id/tvVideoName']).get_text(timeout=10)
-        while test_video_name not in ['vidmate_video.mp4','app_video.mp4','pdisk_video.mp4']:
-            self.d(resourceId=res['com.app.videoplayer:id/ivMore']).click()
+    def clear_home_xxx(self):
+        """删除首页的xxx"""
+        self.d(text="xxx").click(timeout=2)
+        test_xxx_name = self.d(resourceId=res['com.app.xxxxxx:id/tvxxxName']).get_text(timeout=10)
+        while test_xxx_name not in ['xxx_xxx.mp4','app_xxx.mp4','xxx_xxx.mp4']:
+            self.d(resourceId=res['com.app.xxxxxx:id/ivMore']).click()
             self.d(scrollable=True).scroll.toEnd()  # 滚动到最底部
             self.d(text="Delete").click(timeout=2)
             self.d(text="OK").click(timeout=2)
-            test_video_name = self.d(resourceId=res['com.app.videoplayer:id/tvVideoName']).get_text(timeout=10)
+            test_xxx_name = self.d(resourceId=res['com.app.xxxxxx:id/tvxxxName']).get_text(timeout=10)
         print('清理测试视频检查通过')
 
     @exception_pass
-    def clear_downloaded_video(self):
+    def clear_downloaded_xxx(self):
         """删除下载管理器记录"""
         while not self.d(text='Go to download').exists(timeout=2):
-            self.d(resourceId=res['com.app.videoplayer:id/ivMore']).click(timeout=2)
+            self.d(resourceId=res['com.app.xxxxxx:id/ivMore']).click(timeout=2)
             self.d(text="Delete").click(timeout=2)
             self.d(text="Confirm").click(timeout=2)
         print('清理下载管理器记录通过')
@@ -89,14 +89,14 @@ class appBase(common):
     def clear_music(self):
         """删除下音乐记录"""
         self.d(text="MUSIC").click(timeout=2)
-        music_title = self.d(resourceId=res['com.app.videoplayer:id/tvSongName']).get_text(timeout=2)
+        music_title = self.d(resourceId=res['com.app.xxxxxx:id/tvSongName']).get_text(timeout=2)
         while 'test_music1' not in music_title:
-            self.d(resourceId=res['com.app.videoplayer:id/ivMore']).click(timeout=2)
+            self.d(resourceId=res['com.app.xxxxxx:id/ivMore']).click(timeout=2)
             self.d(scrollable=True).scroll.toEnd()  # 滚动到最底部
             self.d(text="Delete").click(timeout=2)
             self.d(text="OK").click(timeout=2)
-            music_title = self.d(resourceId=res['com.app.videoplayer:id/tvSongName']).get_text(timeout=2)
-        self.d(text="VIDEO").click(timeout=2)
+            music_title = self.d(resourceId=res['com.app.xxxxxx:id/tvSongName']).get_text(timeout=2)
+        self.d(text="xxx").click(timeout=2)
         print('清除音乐文件通过')
 
     @exception_pass
@@ -106,35 +106,35 @@ class appBase(common):
         self.d(text="允许").click(timeout=3)
 
     @retry(stop=stop_after_attempt(2))
-    def download_video(self):
+    def download_xxx(self):
         """下载视频"""
         #下载新的视频
         self.case_restart_check(text='DOWNLOAD')
         self.d(text="DOWNLOAD").click(timeout=2)
 
         ###### 清理下载记录
-        self.d(resourceId=res['com.app.videoplayer:id/ivDownload']).click()
-        self.clear_downloaded_video()
+        self.d(resourceId=res['com.app.xxxxxx:id/ivDownload']).click()
+        self.clear_downloaded_xxx()
         self.d.press('back')
 
-        self.d(resourceId=res['com.app.videoplayer:id/clSearch']).click(timeout=2)
+        self.d(resourceId=res['com.app.xxxxxx:id/clSearch']).click(timeout=2)
         self.d.send_keys("https://www.ted.com/talks/armand_d_angour_the_ancient_origins_of_the_olympics/up-next")
         self.d.press('enter')
-        self.d(resourceId=res['com.app.videoplayer:id/button_analytics']).click(timeout=10)
+        self.d(resourceId=res['com.app.xxxxxx:id/button_analytics']).click(timeout=10)
         time.sleep(10)
-        if not str(self.d(resourceId=res['com.app.videoplayer:id/text_size']).get_text(timeout=10)).__contains__('MB'):
+        if not str(self.d(resourceId=res['com.app.xxxxxx:id/text_size']).get_text(timeout=10)).__contains__('MB'):
             time.sleep(10)
         self.d(text="Download").click(timeout=5)
         self.d(text="view >").click(timeout=5)
-        if not self.d(resourceId=res['com.app.videoplayer:id/flCover']).exists(timeout=2): raise ('下载管理器没有视频')
+        if not self.d(resourceId=res['com.app.xxxxxx:id/flCover']).exists(timeout=2): raise ('下载管理器没有视频')
         check_text = time.strftime("%Y-%m-%d", time.localtime())
-        suc_text = self.d(resourceId=res['com.app.videoplayer:id/tvDownloaded']).get_text(timeout=240)
+        suc_text = self.d(resourceId=res['com.app.xxxxxx:id/tvDownloaded']).get_text(timeout=240)
         if check_text not in suc_text:
             raise ('测试视频下载超时未完成')
-        self.d(resourceId=res['com.app.videoplayer:id/ivLeft']).click(timeout=2)
+        self.d(resourceId=res['com.app.xxxxxx:id/ivLeft']).click(timeout=2)
         self.d.press('back')
         self.d.press('back')
-        self.d(text="VIDEO").click(timeout=1)
+        self.d(text="xxx").click(timeout=1)
         print('下载视频通过')
 
 
@@ -155,21 +155,21 @@ class appBase(common):
             self.d(resourceId=resourceId).click(timeout=5)
 
 
-    def pdisk_video_check(self,videolink):
-        """检查pdisk热剧"""
+    def xxx_xxx_check(self,xxxlink):
+        """检查xxx热剧"""
         self.case_restart_check(text='DOWNLOAD')
         self.d(text="DOWNLOAD").click(timeout=2)
-        self.d(resourceId=res['com.app.videoplayer:id/clSearch']).click(timeout=2)
-        self.d.send_keys(videolink)
+        self.d(resourceId=res['com.app.xxxxxx:id/clSearch']).click(timeout=2)
+        self.d.send_keys(xxxlink)
         self.d.xpath('//*[@resource-id="app"]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[4]/android.view.View[1]').click(timeout=20)
         self.d(scrollable=True).scroll.toEnd()
         self.d.click(0.596, 0.808)
-        self.d(resourceId=res['com.app.videoplayer:id/iv_close']).click(timeout=20)
+        self.d(resourceId=res['com.app.xxxxxx:id/iv_close']).click(timeout=20)
         self.d.click(0.431, 0.232)  # 高亮屏幕
-        playtime_pre = self.d(resourceId=res['com.app.videoplayer:id/has_played']).get_text(timeout=2)
+        playtime_pre = self.d(resourceId=res['com.app.xxxxxx:id/has_played']).get_text(timeout=2)
         time.sleep(10)
         self.d.click(0.431, 0.232)  # 高亮屏幕
-        playtime_next = self.d(resourceId=res['com.app.videoplayer:id/has_played']).get_text(timeout=2)
+        playtime_next = self.d(resourceId=res['com.app.xxxxxx:id/has_played']).get_text(timeout=2)
         if playtime_pre == playtime_next: raise Exception('播放时间没有跑动')
         self.d.screenshot()
 
@@ -182,14 +182,14 @@ class VdieoPlay(appBase):
 
     @classmethod
     @exception_pass
-    def play_video_skip(cls):
+    def play_xxx_skip(cls):
         """处理播放引导"""
-        cls.d(resourceId=res['com.app.videoplayer:id/svgOrientation']).click(timeout=5)
+        cls.d(resourceId=res['com.app.xxxxxx:id/svgOrientation']).click(timeout=5)
         cls.d(text="skip").click(timeout=2)  # 跳过播放引导
         cls.d(text="Skip").click(timeout=2)  # 跳过播放引导
 
     @classmethod
-    def video_error_feedback(cls):
+    def xxx_error_feedback(cls):
         """视频异常反馈"""
         if cls.d(text='Error!').exists(timeout=10):
             cls.d.screenshot()
@@ -198,14 +198,14 @@ class VdieoPlay(appBase):
             raise Exception('视频异常')
 
     @classmethod
-    def video_play_time_check(cls):
+    def xxx_play_time_check(cls):
         """视频播放检查"""
         ###### 时间走动验证 ######
         cls.d.click(0.431, 0.232)  # 高亮屏幕
-        playtime_pre = cls.d(resourceId=res['com.app.videoplayer:id/has_played']).get_text(timeout=2)
+        playtime_pre = cls.d(resourceId=res['com.app.xxxxxx:id/has_played']).get_text(timeout=2)
         time.sleep(10)
         cls.d.click(0.431, 0.232)  # 高亮屏幕
-        playtime_next = cls.d(resourceId=res['com.app.videoplayer:id/has_played']).get_text(timeout=2)
+        playtime_next = cls.d(resourceId=res['com.app.xxxxxx:id/has_played']).get_text(timeout=2)
         cls.d.screenshot()
         return playtime_pre, playtime_next
 
@@ -235,7 +235,7 @@ class action:
 
 
 if __name__ == '__main__':
-    print(res['com.app.videoplayer:id/tvGotIt'])
+    print(res['com.app.xxxxxx:id/tvGotIt'])
 
 
 

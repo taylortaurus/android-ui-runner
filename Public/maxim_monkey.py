@@ -181,6 +181,6 @@ if __name__ == '__main__':
     log.set_logger('udid', './log.log')
     maxim = Maxim()
     maxim.set_driver(None)
-    command = maxim.command(package='com.quvideo.xiaoying', runtime=2, mode='uiautomatormix', throttle=100,
+    command = maxim.command(package='com.quxxx.xiaoying', runtime=2, mode='uiautomatormix', throttle=100,
                             options=' -v -v ', whitelist=True, off_line=True)
     maxim.run_monkey(command)

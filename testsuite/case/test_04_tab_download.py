@@ -23,21 +23,21 @@ class tab_download(unittest.TestCase, BasePage):
 
 
     @testcase
-    def test_01_video_download(self):
+    def test_01_xxx_download(self):
         """检查视频下载"""
         app.case_restart_check(text='DOWNLOAD')
         self.d(text="DOWNLOAD").click(timeout=5)
 
         ###### 清理下载记录
-        self.d(resourceId=res['com.app.videoplayer:id/ivDownload']).click()
-        app.clear_downloaded_video()
+        self.d(resourceId=res['com.app.xxxxxx:id/ivDownload']).click()
+        app.clear_downloaded_xxx()
         self.d.press('back')
 
         ###### 访问下载连接
-        self.d(resourceId=res['com.app.videoplayer:id/clSearch']).click(timeout=5)
+        self.d(resourceId=res['com.app.xxxxxx:id/clSearch']).click(timeout=5)
         self.d.send_keys("https://www.ted.com/talks/armand_d_angour_the_ancient_origins_of_the_olympics/up-next")
         self.d.press('enter')
-        self.d(resourceId=res['com.app.videoplayer:id/button_analytics']).click(timeout=5)
+        self.d(resourceId=res['com.app.xxxxxx:id/button_analytics']).click(timeout=5)
 
         ###### 清理知栏消息
         app.clear_notification()
@@ -47,17 +47,17 @@ class tab_download(unittest.TestCase, BasePage):
         time.sleep(10)
         self.d(text="Download").click(timeout=5)
         self.d(text="view >").click(timeout=5)
-        self.assertTrue(self.d(resourceId=res['com.app.videoplayer:id/flCover']).exists(timeout=1),
+        self.assertTrue(self.d(resourceId=res['com.app.xxxxxx:id/flCover']).exists(timeout=1),
                         msg='下载管理器没有视频')
         self.screenshot()
 
         ###### 暂停下载
-        self.d(resourceId=res['com.app.videoplayer:id/progress']).click()
+        self.d(resourceId=res['com.app.xxxxxx:id/progress']).click()
         self.assertTrue(self.d(text='Paused').exists(timeout=5),msg='暂停下载失败')
 
 
         ###### 恢复下载
-        self.d(resourceId=res['com.app.videoplayer:id/progress']).click()
+        self.d(resourceId=res['com.app.xxxxxx:id/progress']).click()
         time.sleep(2)
         self.assertFalse(self.d(text='Paused').exists(timeout=5), msg='恢复下载失败')
 
@@ -68,17 +68,17 @@ class tab_download(unittest.TestCase, BasePage):
         self.d.press('back')
 
         ###### Downloading count
-        downloading_count = int(self.d(resourceId=res['com.app.videoplayer:id/tvCount']).get_text())
+        downloading_count = int(self.d(resourceId=res['com.app.xxxxxx:id/tvCount']).get_text())
         self.assertEqual(downloading_count, 1, msg='Downloading count计算错误')
 
         ###### 下载完成检查
-        self.assertTrue(self.d(resourceId=res['com.app.videoplayer:id/tvDownloaded']).exists(timeout=540),
+        self.assertTrue(self.d(resourceId=res['com.app.xxxxxx:id/tvDownloaded']).exists(timeout=540),
                         msg='下载完成超时')
 
-        self.d(resourceId=res['com.app.videoplayer:id/ivLeft']).click(timeout=5)
+        self.d(resourceId=res['com.app.xxxxxx:id/ivLeft']).click(timeout=5)
         self.d.press('back')
         time.sleep(1)
-        self.d(resourceId=res['com.app.videoplayer:id/ivSiteClose']).click(timeout=5)
+        self.d(resourceId=res['com.app.xxxxxx:id/ivSiteClose']).click(timeout=5)
 
 
 
@@ -89,17 +89,17 @@ class tab_download(unittest.TestCase, BasePage):
         self.d(text="DOWNLOAD").click(timeout=5)
 
         ###### 访问下载连接
-        self.d(resourceId=res['com.app.videoplayer:id/clSearch']).click(timeout=5)
+        self.d(resourceId=res['com.app.xxxxxx:id/clSearch']).click(timeout=5)
         self.d.send_keys("https://www.ted.com/talks/armand_d_angour_the_ancient_origins_of_the_olympics/up-next")
         self.d.press('enter')
-        self.d(resourceId=res['com.app.videoplayer:id/button_analytics']).click(timeout=5)
+        self.d(resourceId=res['com.app.xxxxxx:id/button_analytics']).click(timeout=5)
 
         ###### 在线播放
         time.sleep(10)
         self.d(text="Play").click()
         time.sleep(10)
-        video_play = VdieoPlay.video_play_time_check()
-        self.assertNotEqual(video_play[0], video_play[1], msg='播放时间没有跑动')
+        xxx_play = VdieoPlay.xxx_play_time_check()
+        self.assertNotEqual(xxx_play[0], xxx_play[1], msg='播放时间没有跑动')
         self.screenshot()
 
         #todo:下载
@@ -114,8 +114,8 @@ class tab_download(unittest.TestCase, BasePage):
 
         ###### 创建新的书签
         self.d(text="More").click(timeout=5)
-        self.d(resourceId=res['com.app.videoplayer:id/edtName']).set_text('google', timeout=5)
-        self.d(resourceId=res['com.app.videoplayer:id/edtUrl']).set_text('https://google.com', timeout=5)
+        self.d(resourceId=res['com.app.xxxxxx:id/edtName']).set_text('google', timeout=5)
+        self.d(resourceId=res['com.app.xxxxxx:id/edtUrl']).set_text('https://google.com', timeout=5)
         self.d(text="Save").click(timeout=5)
         self.screenshot()
 
@@ -128,7 +128,7 @@ class tab_download(unittest.TestCase, BasePage):
 
         ###### 删除书签
         self.d(text="google").long_click(duration=5, timeout=10)
-        BookMark_ID = res['com.app.videoplayer:id/rvBookMark']
+        BookMark_ID = res['com.app.xxxxxx:id/rvBookMark']
         self.d.xpath(f'//*[@resource-id="{BookMark_ID}"]/android.view.ViewGroup[2]/android.widget.ImageView[2]').click()
         self.d(text='Ok').click(timeout=5)
         time.sleep(2)
@@ -147,7 +147,7 @@ class tab_download(unittest.TestCase, BasePage):
         self.d.press('back')
 
     @testcase
-    def test_05_youtube_video(self):
+    def test_05_youtube_xxx(self):
         """检查youtube视频"""
         app.case_restart_check(text='DOWNLOAD')
         self.d(text="DOWNLOAD").click(timeout=5)

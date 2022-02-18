@@ -32,9 +32,9 @@ class Install(unittest.TestCase, BasePage):
         app.startpage_handle()
         app.rate_skip()
         app.vip_check()
-        app.clear_home_video()
+        app.clear_home_xxx()
         app.clear_music()
-        app.download_video()
+        app.download_xxx()
 
 
 
